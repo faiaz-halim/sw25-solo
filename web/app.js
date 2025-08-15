@@ -1,5 +1,6 @@
 class ApiService {
     constructor() {
+        // Use relative path for Docker deployment, fallback to localhost for direct development
         this.baseUrl = 'http://localhost:8000/api/game';
     }
 

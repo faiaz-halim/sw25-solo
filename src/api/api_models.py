@@ -14,17 +14,52 @@ class NewGameRequest(BaseModel):
 
     @validator('player_race')
     def validate_race(cls, v):
+        if not isinstance(v, str):
+            raise ValueError(f'Race must be a string, got {type(v)}')
         try:
+            # Handle the specific enum values from the HTML
+            race_mapping = {
+                'HUMAN': Race.HUMAN,
+                'ELF': Race.ELF,
+                'DWARF': Race.DWARF,
+                'GNOME': Race.GNOME,
+                'HALFLING': Race.HALFLING,
+                'HALF_ELF': Race.HALF_ELF,
+                'HALF_DWARF': Race.HALF_DWARF
+            }
+            if v.upper() in race_mapping:
+                return race_mapping[v.upper()]
+            # Fallback to direct enum creation
             return Race(v.upper().replace('-', '_'))
-        except ValueError:
-            raise ValueError(f'Invalid race: {v}')
+        except (ValueError, AttributeError) as e:
+            valid_races = [race.name for race in Race]
+            raise ValueError(f'Invalid race: {v}. Valid races are: {valid_races}')
 
     @validator('player_class')
     def validate_class(cls, v):
+        if not isinstance(v, str):
+            raise ValueError(f'Class must be a string, got {type(v)}')
         try:
+            # Handle the specific enum values from the HTML
+            class_mapping = {
+                'FIGHTER': Class.FIGHTER,
+                'WIZARD': Class.WIZARD,
+                'PRIEST': Class.PRIEST,
+                'ROGUE': Class.ROGUE,
+                'RANGER': Class.RANGER,
+                'PALADIN': Class.PALADIN,
+                'BARD': Class.BARD,
+                'DRUID': Class.DRUID,
+                'MONK': Class.MONK,
+                'PSIONIC': Class.PSIONIC
+            }
+            if v.upper() in class_mapping:
+                return class_mapping[v.upper()]
+            # Fallback to direct enum creation
             return Class(v.upper().replace('-', '_'))
-        except ValueError:
-            raise ValueError(f'Invalid class: {v}')
+        except (ValueError, AttributeError) as e:
+            valid_classes = [cls.name for cls in Class]
+            raise ValueError(f'Invalid class: {v}. Valid classes are: {valid_classes}')
 
 
 class ActionRequest(BaseModel):

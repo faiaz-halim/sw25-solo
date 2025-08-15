@@ -109,7 +109,7 @@ async def create_new_game(request: NewGameRequest):
         )
 
     except Exception as e:
-        logger.error(f"Failed to create new game: {str(e)}")
+        logger.error(f"Failed to create new game: {str(e)}", exc_info=True)
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Failed to create new game: {str(e)}"

@@ -11,6 +11,8 @@ class NewGameRequest(BaseModel):
     player_name: str
     player_race: str
     player_class: str
+    history_choice: Optional[int] = None  # 2-12 for history table
+    adventure_reason_choice: Optional[int] = None  # 2-12 for adventure reason table
 
     @validator('player_race')
     def validate_race(cls, v):
@@ -60,6 +62,18 @@ class NewGameRequest(BaseModel):
         except (ValueError, AttributeError) as e:
             valid_classes = [cls.name for cls in Class]
             raise ValueError(f'Invalid class: {v}. Valid classes are: {valid_classes}')
+
+    @validator('history_choice')
+    def validate_history_choice(cls, v):
+        if v is not None and (v < 2 or v > 12):
+            raise ValueError('History choice must be between 2 and 12')
+        return v
+
+    @validator('adventure_reason_choice')
+    def validate_adventure_reason_choice(cls, v):
+        if v is not None and (v < 2 or v > 12):
+            raise ValueError('Adventure reason choice must be between 2 and 12')
+        return v
 
 
 class ActionRequest(BaseModel):

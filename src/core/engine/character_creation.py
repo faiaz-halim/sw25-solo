@@ -162,7 +162,69 @@ def generate_starting_skills(character_class: Class) -> Dict[SkillType, int]:
     return skills
 
 
-def create_new_character(name: str, race: Race, character_class: Class) -> CharacterSheet:
+def get_history_by_choice(choice: int) -> str:
+    """
+    Get history description by choice (2-12).
+
+    Args:
+        choice (int): Choice from 2-12
+
+    Returns:
+        str: History description
+    """
+    history_table = [
+        "Noble birth - You were born into a noble family with wealth and influence.",
+        "Common birth - You were born into a common family, learning hard work and humility.",
+        "Military background - You served in the military, learning discipline and combat.",
+        "Academic pursuit - You studied in schools or under mentors, gaining knowledge.",
+        "Criminal past - You lived a life of crime, learning stealth and deception.",
+        "Religious upbringing - You were raised in a temple, learning faith and healing.",
+        "Wandering life - You traveled extensively, learning about different cultures.",
+        "Tragic loss - You suffered a great loss that shaped your worldview.",
+        "Mysterious origins - Your past is shrouded in mystery, even to yourself.",
+        "Artistic talent - You were trained in arts, music, or performance.",
+        "Craftsman's apprentice - You learned a trade or craft from a young age.",
+        "Survivor's instinct - You lived through hardship, developing resilience."
+    ]
+
+    # Map choice (2-12) to history table indices (0-11)
+    index = min(max(choice - 2, 0), 11)
+    return history_table[index]
+
+
+def get_adventure_reason_by_choice(choice: int) -> str:
+    """
+    Get adventure reason description by choice (2-12).
+
+    Args:
+        choice (int): Choice from 2-12
+
+    Returns:
+        str: Adventure reason description
+    """
+    adventure_reasons = [
+        "Destiny calls - You feel a calling to a greater purpose.",
+        "Revenge - You seek to avenge a wrong done to you or your family.",
+        "Wealth - You need money to solve personal problems or desires.",
+        "Knowledge - You seek to learn ancient secrets or forbidden knowledge.",
+        "Protection - You must protect someone or something important.",
+        "Redemption - You seek to atone for past mistakes.",
+        "Curiosity - You are driven by an insatiable desire to explore.",
+        "Duty - You have an obligation to your people, family, or order.",
+        "Love - You search for someone or something dear to your heart.",
+        "Power - You crave strength and influence in the world.",
+        "Justice - You fight against evil and injustice wherever you find it.",
+        "Escape - You flee from a dangerous situation or unwanted responsibility."
+    ]
+
+    # Map choice (2-12) to adventure reasons indices (0-11)
+    index = min(max(choice - 2, 0), 11)
+    return adventure_reasons[index]
+
+
+def create_new_character(name: str, race: Race, character_class: Class,
+                        history_choice: Optional[int] = None,
+                        adventure_reason_choice: Optional[int] = None) -> CharacterSheet:
     """
     Create a new character with generated attributes, skills, and background.
 
@@ -170,6 +232,8 @@ def create_new_character(name: str, race: Race, character_class: Class) -> Chara
         name (str): Character's name
         race (Race): Character's race
         character_class (Class): Character's class
+        history_choice (Optional[int]): Player's choice for history (2-12) or None for random
+        adventure_reason_choice (Optional[int]): Player's choice for adventure reason (2-12) or None for random
 
     Returns:
         CharacterSheet: Fully created character sheet
@@ -180,9 +244,17 @@ def create_new_character(name: str, race: Race, character_class: Class) -> Chara
     # Generate skills
     skills = generate_starting_skills(character_class)
 
-    # Generate background
-    history = roll_on_history_table()
-    adventure_reason = roll_on_adventure_reason_table()
+    # Generate background based on choices or random rolls
+    if history_choice is not None:
+        history = get_history_by_choice(history_choice)
+    else:
+        history = roll_on_history_table()
+
+    if adventure_reason_choice is not None:
+        adventure_reason = get_adventure_reason_by_choice(adventure_reason_choice)
+    else:
+        adventure_reason = roll_on_adventure_reason_table()
+
     backstory = f"{history} {adventure_reason}"
 
     # Create character sheet

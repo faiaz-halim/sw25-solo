@@ -4,18 +4,28 @@ class ApiService {
         this.baseUrl = 'http://localhost:8000/api/game';
     }
 
-    async newGame(playerName, playerRace, playerClass) {
+    async newGame(playerName, playerRace, playerClass, historyChoice = null, adventureReasonChoice = null) {
         try {
+            const requestBody = {
+                player_name: playerName,
+                player_race: playerRace,
+                player_class: playerClass
+            };
+
+            // Add backstory choices if provided
+            if (historyChoice) {
+                requestBody.history_choice = parseInt(historyChoice);
+            }
+            if (adventureReasonChoice) {
+                requestBody.adventure_reason_choice = parseInt(adventureReasonChoice);
+            }
+
             const response = await fetch(`${this.baseUrl}/new`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({
-                    player_name: playerName,
-                    player_race: playerRace,
-                    player_class: playerClass
-                })
+                body: JSON.stringify(requestBody)
             });
 
             if (!response.ok) {
@@ -208,9 +218,11 @@ class GameApp {
         const playerName = document.getElementById('player-name').value;
         const playerRace = document.getElementById('player-race').value;
         const playerClass = document.getElementById('player-class').value;
+        const historyChoice = document.getElementById('history-choice').value;
+        const adventureReasonChoice = document.getElementById('adventure-reason-choice').value;
 
         if (!playerName || !playerRace || !playerClass) {
-            alert('Please fill in all fields');
+            alert('Please fill in all required fields');
             return;
         }
 
@@ -218,8 +230,14 @@ class GameApp {
             // Show loading screen
             this.uiManager.showScreen('loading-screen');
 
-            // Create new game
-            const response = await this.apiService.newGame(playerName, playerRace, playerClass);
+            // Create new game with backstory choices
+            const response = await this.apiService.newGame(
+                playerName,
+                playerRace,
+                playerClass,
+                historyChoice || null,
+                adventureReasonChoice || null
+            );
 
             this.sessionId = response.session_id;
             this.gameState = response.initial_state;

@@ -41,11 +41,13 @@ async def create_new_game(request: NewGameRequest):
         # Generate initial world
         world_data = ai_gm.generate_initial_world()
 
-        # Create player character
+        # Create player character with backstory choices
         player_character = create_new_character(
             name=request.player_name,
             race=request.player_race,  # This is now a Race enum
-            character_class=request.player_class  # This is now a Class enum
+            character_class=request.player_class,  # This is now a Class enum
+            history_choice=request.history_choice,
+            adventure_reason_choice=request.adventure_reason_choice
         )
 
         # Generate character details using AI

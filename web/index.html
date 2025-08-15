@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sword World 2.5 AI GM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sword World 2.5 AI Game Master</h1>
+            <p id="session-info" class="hidden">Session ID: <span id="session-id"></span></p>
+        </header>
+
+        <!-- New Game Screen -->
+        <div id="new-game-screen" class="screen">
+            <h2>Create New Character</h2>
+            <form id="new-game-form">
+                <div class="form-group">
+                    <label for="player-name">Character Name:</label>
+                    <input type="text" id="player-name" name="player-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="player-race">Race:</label>
+                    <select id="player-race" name="player-race" required>
+                        <option value="HUMAN">Human</option>
+                        <option value="ELF">Elf</option>
+                        <option value="DWARF">Dwarf</option>
+                        <option value="GNOME">Gnome</option>
+                        <option value="HALFLING">Halfling</option>
+                        <option value="HALF_ELF">Half-Elf</option>
+                        <option value="HALF_DWARF">Half-Dwarf</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="player-class">Class:</label>
+                    <select id="player-class" name="player-class" required>
+                        <option value="FIGHTER">Fighter</option>
+                        <option value="WIZARD">Wizard</option>
+                        <option value="PRIEST">Priest</option>
+                        <option value="ROGUE">Rogue</option>
+                        <option value="RANGER">Ranger</option>
+                        <option value="PALADIN">Paladin</option>
+                        <option value="BARD">Bard</option>
+                        <option value="DRUID">Druid</option>
+                        <option value="MONK">Monk</option>
+                        <option value="PSIONIC">Psionic</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="start-game-btn">Start Adventure</button>
+            </form>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" class="screen hidden">
+            <div class="game-layout">
+                <!-- Main Game Area -->
+                <div class="main-content">
+                    <!-- Narrative Window -->
+                    <div id="narrative-window" class="narrative-window">
+                        <div id="narrative-content" class="narrative-content"></div>
+                    </div>
+
+                    <!-- Player Input -->
+                    <form id="input-form" class="input-form">
+                        <input type="text" id="player-input" placeholder="What would you like to do?" required>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+
+                <!-- Side Panels -->
+                <div class="side-panels">
+                    <!-- Character Sheet Panel -->
+                    <div id="character-sheet" class="panel character-sheet">
+                        <h3>Character Sheet</h3>
+                        <div id="character-info"></div>
+                    </div>
+
+                    <!-- Party Panel -->
+                    <div id="party-panel" class="panel party-panel">
+                        <h3>Party Members</h3>
+                        <div id="party-members"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Screen -->
+        <div id="loading-screen" class="screen hidden">
+            <div class="loading-content">
+                <p>Generating your adventure...</p>
+                <div class="spinner"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

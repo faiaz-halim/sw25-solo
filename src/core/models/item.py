@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import Optional, List
+from typing import Optional, List, Dict
 from .attributes import ItemType
 
 
@@ -40,6 +40,6 @@ class Armor(Item):
 
 class Accessory(Item):
     """Accessory item (rings, amulets, etc.) with special effects."""
-    stat_bonuses: dict = {}  # e.g., {"strength": 2, "dexterity": 1}
-    skill_bonuses: dict = {}  # e.g., {"magic": 1, "perception": 2}
+    stat_bonuses: Dict[str, int] = {}  # e.g., {"strength": 2, "dexterity": 1}
+    skill_bonuses: Dict[str, int] = {}  # e.g., {"magic": 1, "perception": 2}
     special_abilities: List[str] = []

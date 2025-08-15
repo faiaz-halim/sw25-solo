@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Any
 from .attributes import SkillType
 from .item import Item
 
@@ -38,7 +38,7 @@ class Monster(BaseModel):
     vulnerabilities: List[str] = []  # e.g., "Cold", "Holy"
 
     # Loot
-    loot_table: List[Dict[str, any]] = []  # List of possible loot items with drop chances
+    loot_table: List[Dict[str, Any]] = []  # List of possible loot items with drop chances
     experience_reward: int  # Experience points awarded for defeating this monster
 
     # Monster behavior

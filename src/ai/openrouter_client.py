@@ -31,7 +31,7 @@ class OpenRouterClient:
             "HTTP-Referer": "https://github.com/faiaz/SwordWorld2.5",  # Optional, for OpenRouter analytics
         }
 
-    def call_llm(self, prompt: str, system_prompt: str = None, model: str = "openai/gpt-3.5-turbo",
+    def call_llm(self, prompt: str, system_prompt: str = None, model: str = "qwen/qwen3-coder:free",
                  max_tokens: int = 1000, temperature: float = 0.7, retries: int = 3) -> Dict:
         """
         Call the LLM through OpenRouter API.

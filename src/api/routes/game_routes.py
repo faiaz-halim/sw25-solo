@@ -1,14 +1,14 @@
 from fastapi import APIRouter, HTTPException, status
 from typing import Dict
-from ...api.api_models import (
+from src.api.api_models import (
     NewGameRequest,
     ActionRequest,
     GameStateResponse,
     GameCreationResponse
 )
-from ...core.game_state import GameState, save_game, load_game
-from ...core.engine.character_creation import create_new_character
-from ...ai.ai_gm import AIGameMaster
+from src.core.game_state import GameState, save_game, load_game
+from src.core.engine.character_creation import create_new_character
+from src.ai.ai_gm import AIGameMaster
 import logging
 import uuid
 import os

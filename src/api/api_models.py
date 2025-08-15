@@ -1,9 +1,9 @@
 from pydantic import BaseModel
 from typing import List, Optional, Dict, Any
-from ..core.models.attributes import Race, Class
-from ..core.models.character import CharacterSheet
-from ..core.models.quest import Quest
-from ..core.models.item import Item
+from src.core.models.attributes import Race, Class
+from src.core.models.character import CharacterSheet
+from src.core.models.quest import Quest
+from src.core.models.item import Item
 
 
 class NewGameRequest(BaseModel):

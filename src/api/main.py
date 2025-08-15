@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from .routes import game_routes
+from src.api.routes import game_routes
 import logging
 
 # Set up logging

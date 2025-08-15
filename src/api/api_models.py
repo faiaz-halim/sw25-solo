@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, validator
 from typing import List, Optional, Dict, Any
 from src.core.models.attributes import Race, Class
 from src.core.models.character import CharacterSheet
@@ -9,8 +9,22 @@ from src.core.models.item import Item
 class NewGameRequest(BaseModel):
     """Request model for creating a new game."""
     player_name: str
-    player_race: Race
-    player_class: Class
+    player_race: str
+    player_class: str
+
+    @validator('player_race')
+    def validate_race(cls, v):
+        try:
+            return Race(v.upper().replace('-', '_'))
+        except ValueError:
+            raise ValueError(f'Invalid race: {v}')
+
+    @validator('player_class')
+    def validate_class(cls, v):
+        try:
+            return Class(v.upper().replace('-', '_'))
+        except ValueError:
+            raise ValueError(f'Invalid class: {v}')
 
 
 class ActionRequest(BaseModel):

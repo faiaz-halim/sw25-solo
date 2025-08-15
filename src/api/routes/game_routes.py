@@ -44,8 +44,8 @@ async def create_new_game(request: NewGameRequest):
         # Create player character
         player_character = create_new_character(
             name=request.player_name,
-            race=request.player_race,
-            character_class=request.player_class
+            race=request.player_race,  # This is now a Race enum
+            character_class=request.player_class  # This is now a Class enum
         )
 
         # Generate character details using AI

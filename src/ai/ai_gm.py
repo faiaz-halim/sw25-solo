@@ -318,11 +318,61 @@ class AIGameMaster:
 
         except Exception as e:
             logger.error(f"Failed to process player action: {str(e)}")
-            return {
-                "narrative": "You consider your options carefully.",
-                "state_changes": {},
-                "new_options": ["Look around", "Check inventory", "Rest"]
-            }
+            # Provide better fallback content based on the action type
+            return self._get_fallback_action_response(game_state, player_input)
+
+    def _get_fallback_action_response(self, game_state: Dict, player_input: str) -> Dict:
+        """
+        Provide fallback response when AI is unavailable.
+
+        Args:
+            game_state (Dict): Current game state
+            player_input (str): Player's action input
+
+        Returns:
+            Dict: Fallback response with narrative and options
+        """
+        player_character = game_state.get("player_character", {})
+        world_context = game_state.get("world_context", {})
+
+        # Check if this is the initial "Look around" action
+        if player_input.lower().startswith("look around"):
+            location = world_context.get("current_location", "the area")
+            world_description = world_context.get("world_description", "the surrounding area")
+
+            # Get character backstory if available
+            backstory = ""
+            if player_character and hasattr(player_character, 'backstory'):
+                backstory = player_character.backstory
+
+            # Create a meaningful initial narrative
+            narrative = f"You are {player_character.get('name', 'the adventurer')} "
+            if backstory:
+                # Extract a brief part of the backstory
+                backstory_brief = backstory[:100] + "..." if len(backstory) > 100 else backstory
+                narrative += f"who has come to {location}. {backstory_brief} "
+
+            narrative += f"You find yourself in {location}. {world_description} "
+            narrative += "The area seems quiet for now, but there's much to explore."
+
+            # Provide meaningful initial options
+            options = [
+                "Explore the surroundings",
+                "Check your equipment",
+                "Rest and gather your thoughts",
+                "Look for signs of other travelers"
+            ]
+
+        else:
+            # Generic fallback for other actions
+            narrative = "You consider your options carefully."
+            options = ["Look around", "Check inventory", "Rest"]
+
+        return {
+            "narrative": narrative,
+            "state_changes": {},
+            "new_options": options
+        }
 
     def _extract_options_from_response(self, response_text: str) -> List[str]:
         """Extract action options from AI response."""

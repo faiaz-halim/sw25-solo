@@ -1,11 +1,13 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import List, Dict, Optional
 from .attributes import Race, Class, SkillType
 from .item import Item, Weapon, Armor, Accessory
 from .spell import Spell
+from enum import Enum
 
 
 class CharacterSheet(BaseModel):
+    model_config = {"use_enum_values": True}
     """Character sheet implementation based on Sword World 2.5 rules."""
     # Basic information
     id: str

@@ -12,6 +12,7 @@ class QuestStatus(Enum):
 
 
 class Quest(BaseModel):
+    model_config = {"use_enum_values": True}
     """Quest data class with fields for title, description, objectives, and status."""
     id: str
     title: str

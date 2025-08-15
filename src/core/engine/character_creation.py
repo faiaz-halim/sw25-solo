@@ -1,7 +1,7 @@
 from ..models.character import CharacterSheet
 from ..models.attributes import Race, Class, SkillType
 from ..models.dice import roll_d6, roll_2d6
-from typing import Dict, List
+from typing import Dict, List, Optional
 import random
 
 

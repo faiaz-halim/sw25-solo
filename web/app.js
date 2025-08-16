@@ -460,6 +460,12 @@ class GameApp {
             saveGameBtn.addEventListener('click', () => this.handleSaveGame());
         }
 
+        // Load game button
+        const loadGameBtn = document.getElementById('load-game-btn');
+        if (loadGameBtn) {
+            loadGameBtn.addEventListener('click', () => this.handleShowLoadModal());
+        }
+
         // Show history button
         const showHistoryBtn = document.getElementById('show-history-btn');
         if (showHistoryBtn) {
@@ -659,6 +665,13 @@ class GameApp {
             this.uiManager.showConversationHistory();
         } else {
             alert('No conversation history available');
+        }
+    }
+
+    handleShowLoadModal() {
+        const loadModal = document.getElementById('load-modal');
+        if (loadModal) {
+            loadModal.classList.remove('hidden');
         }
     }
 

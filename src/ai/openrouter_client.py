@@ -31,89 +31,115 @@ class OpenRouterClient:
             "HTTP-Referer": "https://github.com/faiaz/SwordWorld2.5",  # Optional, for OpenRouter analytics
         }
 
-    def call_llm(self, prompt: str, system_prompt: str = None, model: str = "meta-llama/llama-3.3-70b-instruct:free",
-                 temperature: float = 0.7, retries: int = 3) -> Dict:
+    def call_llm(self, prompt: str, system_prompt: str = None, model: str = None,
+                 temperature: float = 0.7, retries: int = 3, model_priority_list: list = None) -> Dict:
         """
-        Call the LLM through OpenRouter API.
+        Call the LLM through OpenRouter API with model fallback support.
 
         Args:
             prompt (str): The user prompt to send to the LLM
             system_prompt (str): System prompt to guide the LLM's behavior
-            model (str): The model to use (default: gpt-3.5-turbo)
+            model (str): The specific model to use (if None, will use priority list)
             temperature (float): Temperature for response randomness (0.0 to 1.0)
             retries (int): Number of retry attempts for failed requests
+            model_priority_list (list): List of models to try in order of preference
 
         Returns:
             Dict: Response from the LLM containing the generated text and metadata
 
         Raises:
-            Exception: If the API call fails after all retries
+            Exception: If the API call fails after all retries and all models
         """
-        messages = []
+        # Default priority list if none provided
+        if model_priority_list is None:
+            model_priority_list = [
+                "cognitivecomputations/dolphin3.0-mistral-24b:free",
+                "mistralai/mistral-small-24b-instruct-2501:free",
+                "meta-llama/llama-3.3-70b-instruct:free",
+                "qwen/qwen3-coder:free",
+                "qwen/qwen3-30b-a3b:free"
+            ]
 
-        # Add system prompt if provided
-        if system_prompt:
-            messages.append({"role": "system", "content": system_prompt})
+        # If specific model is provided, use it
+        models_to_try = [model] if model else model_priority_list
 
-        # Add user prompt
-        messages.append({"role": "user", "content": prompt})
+        last_exception = None
 
-        payload = {
-            "model": model,
-            "messages": messages,
-            "temperature": temperature
-        }
+        # Try each model in order
+        for current_model in models_to_try:
+            messages = []
 
-        url = f"{self.base_url}/chat/completions"
+            # Add system prompt if provided
+            if system_prompt:
+                messages.append({"role": "system", "content": system_prompt})
 
-        # Log the request for debugging
-        logger.info(f"Calling LLM API with model: {model}")
-        logger.debug(f"System prompt: {system_prompt}")
-        logger.debug(f"User prompt: {prompt}")
-        logger.debug(f"Payload: {json.dumps(payload, indent=2)}")
+            # Add user prompt
+            messages.append({"role": "user", "content": prompt})
 
-        for attempt in range(retries + 1):
-            try:
-                response = requests.post(url, headers=self.headers, json=payload, timeout=30)
+            payload = {
+                "model": current_model,
+                "messages": messages,
+                "temperature": temperature
+            }
 
-                if response.status_code == 200:
-                    result = response.json()
-                    logger.info(f"Successfully called LLM API. Usage: {result.get('usage', {})}")
-                    # Log the response content
-                    if result.get('choices'):
-                        response_content = result['choices'][0].get('message', {}).get('content', '')
-                        logger.debug(f"LLM Response: {response_content}")
-                    return result
-                elif response.status_code == 429:
-                    # Rate limited - wait and retry
-                    wait_time = 2 ** attempt  # Exponential backoff
-                    logger.warning(f"Rate limited. Waiting {wait_time} seconds before retry {attempt + 1}/{retries}")
-                    time.sleep(wait_time)
-                    continue
-                else:
-                    logger.error(f"API call failed with status {response.status_code}: {response.text}")
+            url = f"{self.base_url}/chat/completions"
+
+            # Log the request for debugging
+            logger.info(f"Calling LLM API with model: {current_model}")
+            logger.debug(f"System prompt: {system_prompt}")
+            logger.debug(f"User prompt: {prompt}")
+            logger.debug(f"Payload: {json.dumps(payload, indent=2)}")
+
+            for attempt in range(retries + 1):
+                try:
+                    response = requests.post(url, headers=self.headers, json=payload, timeout=30)
+
+                    if response.status_code == 200:
+                        result = response.json()
+                        logger.info(f"Successfully called LLM API with model {current_model}. Usage: {result.get('usage', {})}")
+                        # Log the response content
+                        if result.get('choices'):
+                            response_content = result['choices'][0].get('message', {}).get('content', '')
+                            logger.debug(f"LLM Response: {response_content}")
+                        return result
+                    elif response.status_code == 429:
+                        # Rate limited - wait and retry
+                        wait_time = 2 ** attempt  # Exponential backoff
+                        logger.warning(f"Rate limited with model {current_model}. Waiting {wait_time} seconds before retry {attempt + 1}/{retries}")
+                        time.sleep(wait_time)
+                        continue
+                    else:
+                        logger.error(f"API call failed with model {current_model} status {response.status_code}: {response.text}")
+                        if attempt < retries:
+                            wait_time = 2 ** attempt
+                            logger.warning(f"Retrying in {wait_time} seconds...")
+                            time.sleep(wait_time)
+                            continue
+                        else:
+                            last_exception = Exception(f"API call failed after {retries} retries with model {current_model}: {response.status_code} - {response.text}")
+                            break  # Break inner retry loop to try next model
+
+                except requests.exceptions.RequestException as e:
+                    logger.error(f"Request failed with model {current_model}: {str(e)}")
                     if attempt < retries:
                         wait_time = 2 ** attempt
                         logger.warning(f"Retrying in {wait_time} seconds...")
                         time.sleep(wait_time)
                         continue
                     else:
-                        raise Exception(f"API call failed after {retries} retries: {response.status_code} - {response.text}")
+                        last_exception = Exception(f"Request failed after {retries} retries with model {current_model}: {str(e)}")
+                        break  # Break inner retry loop to try next model
+                except json.JSONDecodeError as e:
+                    logger.error(f"Failed to parse JSON response with model {current_model}: {str(e)}")
+                    last_exception = Exception(f"Failed to parse JSON response with model {current_model}: {str(e)}")
+                    break  # Break inner retry loop to try next model
 
-            except requests.exceptions.RequestException as e:
-                logger.error(f"Request failed: {str(e)}")
-                if attempt < retries:
-                    wait_time = 2 ** attempt
-                    logger.warning(f"Retrying in {wait_time} seconds...")
-                    time.sleep(wait_time)
-                    continue
-                else:
-                    raise Exception(f"Request failed after {retries} retries: {str(e)}")
-            except json.JSONDecodeError as e:
-                logger.error(f"Failed to parse JSON response: {str(e)}")
-                raise Exception(f"Failed to parse JSON response: {str(e)}")
+            # If we get here, this model failed after all retries. Continue to next model.
+            logger.warning(f"All retries exhausted for model {current_model}. Trying next model in priority list.")
+            continue
 
-        raise Exception("Max retries exceeded")
+        # If we get here, all models failed
+        raise Exception(f"All models failed after retries. Last error: {str(last_exception)}")
 
     def extract_text_response(self, response: Dict) -> str:
         """

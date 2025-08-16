@@ -94,45 +94,8 @@
         <!-- Game Screen -->
         <div id="game-screen" class="screen hidden">
             <div class="game-layout">
-                <!-- Left Sidebar - Background only -->
+                <!-- Left Sidebar - Character Sheet and Party -->
                 <div class="left-sidebar">
-                    <!-- Character Background Panel -->
-                    <div id="character-background-panel" class="panel character-background-panel">
-                        <h3>Character Background</h3>
-                        <div id="character-backstory" class="character-backstory"></div>
-                    </div>
-                </div>
-
-                <!-- Main Game Area with Tabs -->
-                <div class="main-content">
-                    <!-- Tab Navigation -->
-                    <div class="tab-navigation">
-                        <button class="tab-btn active" data-tab="game">Game</button>
-                        <button class="tab-btn" data-tab="history">Conversation History</button>
-                    </div>
-
-                    <!-- Game Tab Content -->
-                    <div id="game-tab" class="tab-content active">
-                        <!-- Narrative Window -->
-                        <div id="narrative-window" class="narrative-window">
-                            <div id="narrative-content" class="narrative-content"></div>
-                        </div>
-
-                        <!-- Player Input -->
-                        <form id="input-form" class="input-form">
-                            <input type="text" id="player-input" placeholder="What would you like to do?" required>
-                            <button type="submit">Send</button>
-                        </form>
-                    </div>
-
-                    <!-- History Tab Content -->
-                    <div id="history-tab" class="tab-content">
-                        <div id="history-tab-content" class="history-content"></div>
-                    </div>
-                </div>
-
-                <!-- Right Sidebar - Character Sheet, Party, and Game Management -->
-                <div class="right-sidebar">
                     <!-- Character Sheet Panel -->
                     <div id="character-sheet" class="panel character-sheet">
                         <h3>Character Sheet</h3>
@@ -149,9 +112,39 @@
                     <div id="game-management-panel" class="panel game-management-panel">
                         <h3>Game Management</h3>
                         <div class="game-management-buttons">
-                            <button id="save-game-btn" class="management-btn">Save Game</button>
-                            <button id="show-history-btn" class="management-btn">Show History</button>
+                            <button id="save-game-btn" class="save-load-btn">Save Game</button>
+                            <button id="load-game-btn" class="save-load-btn">Load Game</button>
+                            <button id="show-history-btn" class="save-load-btn">Show History</button>
                         </div>
+                    </div>
+                </div>
+
+                <!-- Main Game Area -->
+                <div class="main-content">
+                    <!-- Narrative Window -->
+                    <div id="narrative-window" class="narrative-window">
+                        <div id="narrative-content" class="narrative-content"></div>
+                    </div>
+
+                    <!-- Player Input -->
+                    <form id="input-form" class="input-form">
+                        <input type="text" id="player-input" placeholder="What would you like to do?" required>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+
+                <!-- Right Sidebar - Background and Common Actions -->
+                <div class="right-sidebar">
+                    <!-- Character Background Panel -->
+                    <div id="character-background-panel" class="panel character-background-panel">
+                        <h3>Character Background</h3>
+                        <div id="character-backstory" class="character-backstory"></div>
+                    </div>
+
+                    <!-- Common Actions Panel -->
+                    <div id="common-actions-panel" class="panel common-actions-panel">
+                        <h3>Common Actions</h3>
+                        <div id="common-actions" class="common-actions-grid"></div>
                     </div>
                 </div>
             </div>

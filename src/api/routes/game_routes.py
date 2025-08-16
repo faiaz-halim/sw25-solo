@@ -326,10 +326,8 @@ async def process_game_action(session_id: str, request: ActionRequest, db: Sessi
         logger.error(f"Failed to process game action: {str(e)}")
         logger.error(f"Full traceback: {traceback.format_exc()}")
         logger.error(f"Error type: {type(e)}")
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Failed to process game action: {str(e)}"
-        )
+        logger.error(f"Error args: {e.args}")
+        raise
 
 
 @router.get("/{session_id}/save", response_model=dict)

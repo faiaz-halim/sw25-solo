@@ -121,8 +121,32 @@ class GameState:
         """Create game state from dictionary."""
         state = cls(data["session_id"])
 
-        # This would need proper deserialization of complex objects
-        # For now, we'll just restore the basic structure
+        # Properly deserialize character data
+        try:
+            player_character_data = data.get("player_character")
+            if player_character_data:
+                state.player_character = CharacterSheet(**player_character_data)
+        except Exception as e:
+            logger = __import__('logging').getLogger(__name__)
+            logger.error(f"Failed to deserialize player character: {str(e)}")
+
+        # Deserialize party members
+        try:
+            party_members_data = data.get("party_members", [])
+            state.party_members = [CharacterSheet(**member_data) for member_data in party_members_data]
+        except Exception as e:
+            logger = __import__('logging').getLogger(__name__)
+            logger.error(f"Failed to deserialize party members: {str(e)}")
+
+        # Deserialize recruitable characters
+        try:
+            recruitable_data = data.get("recruitable_characters", [])
+            state.recruitable_characters = [CharacterSheet(**char_data) for char_data in recruitable_data]
+        except Exception as e:
+            logger = __import__('logging').getLogger(__name__)
+            logger.error(f"Failed to deserialize recruitable characters: {str(e)}")
+
+        # Restore other data
         state.world_context = data.get("world_context", {})
         state.game_flags = data.get("game_flags", {})
         state.conversation_history = data.get("conversation_history", [])

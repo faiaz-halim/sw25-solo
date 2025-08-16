@@ -31,8 +31,8 @@ class OpenRouterClient:
             "HTTP-Referer": "https://github.com/faiaz/SwordWorld2.5",  # Optional, for OpenRouter analytics
         }
 
-    def call_llm(self, prompt: str, system_prompt: str = None, model: str = "qwen/qwen3-coder:free",
-                 max_tokens: int = 1000, temperature: float = 0.7, retries: int = 3) -> Dict:
+    def call_llm(self, prompt: str, system_prompt: str = None, model: str = "meta-llama/llama-3.3-70b-instruct:free",
+                 temperature: float = 0.7, retries: int = 3) -> Dict:
         """
         Call the LLM through OpenRouter API.
 
@@ -40,7 +40,6 @@ class OpenRouterClient:
             prompt (str): The user prompt to send to the LLM
             system_prompt (str): System prompt to guide the LLM's behavior
             model (str): The model to use (default: gpt-3.5-turbo)
-            max_tokens (int): Maximum number of tokens to generate
             temperature (float): Temperature for response randomness (0.0 to 1.0)
             retries (int): Number of retry attempts for failed requests
 
@@ -62,11 +61,16 @@ class OpenRouterClient:
         payload = {
             "model": model,
             "messages": messages,
-            "max_tokens": max_tokens,
             "temperature": temperature
         }
 
         url = f"{self.base_url}/chat/completions"
+
+        # Log the request for debugging
+        logger.info(f"Calling LLM API with model: {model}")
+        logger.debug(f"System prompt: {system_prompt}")
+        logger.debug(f"User prompt: {prompt}")
+        logger.debug(f"Payload: {json.dumps(payload, indent=2)}")
 
         for attempt in range(retries + 1):
             try:
@@ -75,6 +79,10 @@ class OpenRouterClient:
                 if response.status_code == 200:
                     result = response.json()
                     logger.info(f"Successfully called LLM API. Usage: {result.get('usage', {})}")
+                    # Log the response content
+                    if result.get('choices'):
+                        response_content = result['choices'][0].get('message', {}).get('content', '')
+                        logger.debug(f"LLM Response: {response_content}")
                     return result
                 elif response.status_code == 429:
                     # Rate limited - wait and retry
@@ -138,7 +146,6 @@ class OpenRouterClient:
             response = self.call_llm(
                 prompt=test_prompt,
                 system_prompt=test_system_prompt,
-                max_tokens=50,
                 temperature=0.5
             )
 

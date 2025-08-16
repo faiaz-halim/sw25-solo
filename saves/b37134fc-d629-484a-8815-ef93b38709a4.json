@@ -1,0 +1,48 @@
+{
+  "session_id": "b37134fc-d629-484a-8815-ef93b38709a4",
+  "player_character": {
+    "id": "char_8398",
+    "name": "HerpADerp",
+    "race": "Human",
+    "character_class": "Paladin",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 16,
+    "dexterity": 11,
+    "vitality": 13,
+    "intelligence": 14,
+    "spirit": 12,
+    "hit_points": 10,
+    "max_hit_points": 12,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 15,
+    "attack_bonus": 5,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "A Human Paladin who has chosen the path of adventure for reasons known only to them.",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "The Borderlands",
+    "world_description": "A frontier region where civilization meets the wild unknown. Ancient ruins dot the landscape alongside small farming villages and trading posts.",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T01:37:15.345670",
+  "last_updated": "2025-08-15T01:37:15.345675"
+}

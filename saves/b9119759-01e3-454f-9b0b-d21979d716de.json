@@ -1,0 +1,48 @@
+{
+  "session_id": "b9119759-01e3-454f-9b0b-d21979d716de",
+  "player_character": {
+    "id": "char_3573",
+    "name": "HerpADerp",
+    "race": "Human",
+    "character_class": "Bard",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 14,
+    "dexterity": 11,
+    "vitality": 13,
+    "intelligence": 9,
+    "spirit": 13,
+    "hit_points": 10,
+    "max_hit_points": 12,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 15,
+    "attack_bonus": 4,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "In the bustling port city of Verenthia, where the salt-laced air carried the scent of spices from distant lands and the melodies of street performers mingled with the cries of merchants, a human child named Elian was born beneath a crescent moon to a family of sailors who vanished in a storm that left no wreckage. Raised by his mother\u2019s sister, a stern seamstress who stitched silken banners for Altena\u2019s nobility, Elian found solace in the taverns where his uncle\u2019s ghostly violin still hung above the hearth. He taught himself the instrument by candlelight, plucking out dirges for the lost until a wandering bard named Thalia the Silver-Tongued heard his lamentations and took him in. Thalia, a former spy for the Free Cities\u2019 intelligence guild, saw in Elian both a prodigy and a pawn\u2014training him in the arts of song, subterfuge, and storytelling while charging him to perform at clandestine gatherings where secrets were currency. By",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "**Hakutaka Highlands**",
+    "world_description": "The region\u2019s history is etched into its landscapes, from the crumbling ruins of the *\"Heavenly Phoenix Temple\"*\u2014once a sacred site of the vanished Tenshinnin clan\u2014to the bloodstained *\"Crimson Pass,\"* where bandits and mercenaries clash over smuggling routes. Meanwhile, the coastal town of Shirokawa serves as the highlands\u2019 lifeline to the sea, its docks bustling with sampan boats and shadowed by the looming presence of the Black Petal syndicate, a secretive yakuza-like group. The highlands feel a world apart, yet their fate is entangled with Alframe\u2019s broader struggles between the Empire of Aegis-Virsyl, the Free Cities League, and the chaotic wilds beyond.",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T02:25:43.972933",
+  "last_updated": "2025-08-15T02:26:51.951514"
+}

@@ -1,0 +1,51 @@
+{
+  "session_id": "098f8efd-22bb-4114-ae06-63656b139f85",
+  "player_character": {
+    "id": "char_5042",
+    "name": "TestPlayer4",
+    "race": "Halfling",
+    "character_class": "Rogue",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 10,
+    "dexterity": 14,
+    "vitality": 12,
+    "intelligence": 10,
+    "spirit": 13,
+    "hit_points": 10,
+    "max_hit_points": 12,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 17,
+    "attack_bonus": 3,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Stealth": 3,
+      "Lockpicking": 2,
+      "Deceive": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "A Halfling Rogue who has chosen the path of adventure for reasons known only to them.",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "The Whispering Marshes",
+    "world_description": "A vast wetland where mist clings to ancient stone causeways and the calls of unseen creatures echo through the reeds. Spires of forgotten temples rise from the murky waters, their surfaces carved with runes that glow faintly in the moonlight.",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T05:18:43.540602",
+  "last_updated": "2025-08-15T05:18:43.540605"
+}

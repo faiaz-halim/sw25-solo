@@ -1,0 +1,51 @@
+{
+  "session_id": "8b9a51e9-cc22-4bc9-a0e1-346b7f52f306",
+  "player_character": {
+    "id": "char_1411",
+    "name": "TestCharacter",
+    "race": "Dwarf",
+    "character_class": "Priest",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 16,
+    "dexterity": 9,
+    "vitality": 11,
+    "intelligence": 8,
+    "spirit": 10,
+    "hit_points": 10,
+    "max_hit_points": 11,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 14,
+    "attack_bonus": 5,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Healing": 2,
+      "Charm": 2,
+      "Knowledge": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "**Kurokawa Vale**",
+    "world_description": "Nestled between the jagged peaks of the Blackstone Mountains and the mist-shrouded forests of the Y\u014dkai Wood, Kurokawa Vale is a land of quiet beauty and lingering shadows. The region\u2019s name derives from the Kurokawa River, whose inky waters flow unnaturally dark, rumored to be stained by the blood of an ancient demon slain by the first samurai clans. Now, the vale is dotted with rice paddies, tea plantations, and villages where the arts of calligraphy, swordcraft, and spirit-summoning thrive. However, whispers of corruption have returned\u2014the river\u2019s water turns foul near the ruined **Shiro no Kage** (Castle of Shadows), and yokai sightings have surged. The daimy\u014d of the vale, Lord Takeda of Tsuru no Taka, struggles to maintain order as bandits, rogue miko, and a mysterious cult exploit the growing unrest. Beneath the serene surface of cherry blossoms and temple bells lies a simmering tension, perfect for drawing adventurers into forgotten legends and dark conspiracies. The vale\u2019s culture blends stoic bushid\u014d traditions with animistic reverence for nature. Samurai patrol roads alongside **ashigaru** (foot soldiers), while monks chant sutras at hilltop shrines to ward off the encroaching \"Black Mist\" that haunts the riverbanks. Travelers speak of **kappa** rising from the Kurokawa to steal livestock, and of ghostly **y\u016brei** wandering the Bamboo Vale. Ancient watchtowers, built to guard against the demon\u2019s resurrection, now crumble\u2014a symbol of the region\u2019s fading vigilance. ---",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T03:55:26.229492",
+  "last_updated": "2025-08-15T03:55:26.229500"
+}

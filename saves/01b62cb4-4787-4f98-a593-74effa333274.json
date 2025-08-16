@@ -1,0 +1,51 @@
+{
+  "session_id": "01b62cb4-4787-4f98-a593-74effa333274",
+  "player_character": {
+    "id": "char_9850",
+    "name": "HerpADerp",
+    "race": "Gnome",
+    "character_class": "Rogue",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 16,
+    "dexterity": 15,
+    "vitality": 8,
+    "intelligence": 11,
+    "spirit": 7,
+    "hit_points": 10,
+    "max_hit_points": 10,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 17,
+    "attack_bonus": 5,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Stealth": 3,
+      "Lockpicking": 2,
+      "Deceive": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "In the shadowed alleys of Irondeep, a grimy mining town nestled in the foothills of the Stormcoast, a gnome infant was discovered wrapped in a tattered cloak of starlight silk, cradled in a hollowed-out trebuchet shell during a storm that shattered the sky. The townsfolk, wary of the strange fabric and the faint hum of arcane energy emanating from the child, named them \"Tink\" for the way their fingers twitched as if tinkering with unseen gears. Raised by a reclusive thief named Marla Vex, Tink grew up in the underbelly of Irondeep, learning to pick locks and slip through the cracks of society while hiding their true origins. Marla, a former guild enforcer turned outlaw, claimed to have found Tink during a raid on a smuggler\u2019s den, but the gnome\u2019s memories of that night were fragmented\u2014only a glimpse of a glowing rune etched into their palm and the scent of ozone lingering in their dreams. As they matured, Tink\u2019s knack for stealth and improvisation outpaced their peers, yet their curiosity about the rune\u2019s meaning and the void of their past gnawed at them, a quiet ache that no amount of stolen coin could soothe.\n\nTink\u2019s life in Irondeep was one of survival and subversion, but their heart yearned for more than mere theft. They often wandered the town\u2019s abandoned tunnels, drawn to the whispers of ancient machinery and the lingering traces of a forgotten civilization. It was during one such exploration that they uncovered a hidden chamber beneath the ruins of a warforged automaton, where a mechanical spider\u2014a relic from the Age of Mechanized Empires\u2014activated at their touch, revealing a map etched into its chestplate. The spider, programmed to obey only the gnome\u2019s unique biometric signature, led Tink to a cryptic message: *\u201cThe Key lies in the Hollow Spire, where the sky weeps iron.\u201d* This discovery ignited a fervent desire to seek answers, but Marla\u2019s warnings about the dangers of \u201creaching too deep\u201d only fueled Tink\u2019s resolve. Their motivation was twofold\u2014fortune, in the form of the map\u2019s promised treasures, and the hope of unraveling the mystery of their heritage, which seemed inextricably tied to the arcane and the mechanical.\n\nA mischievous wit and an insatiable curiosity define Tink, who often speaks to inanimate objects as if they might reply, a habit picked up from years of conversing with the malfunctioning automatons they stole from. They carry a battered pocket watch that ticks backward, a gift from Marla that she claims \u201cholds the time of the forgotten,\u201d though Tink suspects it\u2019s linked to their mysterious past. Their gregarious nature masks a deep distrust of authority, honed by Marla\u2019s tales of the gnomish guilds\u2019 ruthless purges during the War of the Shattered Crown. Tink\u2019s greatest quirk is their ability to \u201ctune\u201d machinery with a touch, a skill that leaves even seasoned artificers baffled\u2014a talent they\u2019ve kept secret, fearing it might draw unwanted attention. Yet, the rune on their palm pulses faintly when near ancient constructs, hinting at a lineage tied to the lost Gnomeregan engineers who once harnessed the power of the Voidspire, a colossal tower said to house the heart of the first mechanized empire.\n\nNow, Tink roams the Sword World, chasing leads on the Hollow Spire while trading secrets for coin, their path tangled with rumors of a clandestine order known as the Chronomancers, who seek to reclaim the Voidspire\u2019s lost technologies. The map\u2019s coordinates point to the Stormcoast\u2019s perilous Ironwastes, a region teeming with warforged remnants and rival scavengers. Along the way, they\u2019ve crossed paths with a disgraced artificer named Kael Drift, who claims to have seen the same rune on a fallen gnome engineer during the Siege of Gnomeregan, and a shadowy figure known only as \u201cThe Clockwork Oracle,\u201d who sends cryptic messages via mechanical birds. Tink\u2019s journey is as much about unearthing their own history as it is about the treasures of the past, but every clue they uncover seems to tether them to a larger conflict\u2014the resurgence of the Voidspire\u2019s ancient power, and the possibility that their true purpose is not to escape their past, but to reclaim it.",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "The Obsidian Veil",
+    "world_description": "",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T05:21:56.729710",
+  "last_updated": "2025-08-15T05:24:06.982446"
+}

@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException, status
+from fastapi import APIRouter, HTTPException, status, Depends
 from typing import Dict
 from src.api.api_models import (
     NewGameRequest,
@@ -6,28 +6,38 @@ from src.api.api_models import (
     GameStateResponse,
     GameCreationResponse
 )
-from src.core.game_state import GameState, save_game, load_game
+from src.core.game_state import GameState
 from src.core.engine.character_creation import create_new_character
+from src.core.models.attributes import Race, Class
 from src.ai.ai_gm import AIGameMaster
+from src.database.database import get_db
+from src.database.game_state_service import (
+    create_game_session,
+    get_game_session,
+    update_game_session,
+    save_game_action,
+    get_conversation_history,
+    save_conversation_entry
+)
+from sqlalchemy.orm import Session
 import logging
 import uuid
-import os
+from datetime import datetime
+import random
 
 logger = logging.getLogger(__name__)
 
 # Create router
 router = APIRouter()
 
-# In-memory storage for active game sessions (in production, use a database)
-active_sessions: Dict[str, GameState] = {}
-
 @router.post("/new", response_model=GameCreationResponse)
-async def create_new_game(request: NewGameRequest):
+async def create_new_game(request: NewGameRequest, db: Session = Depends(get_db)):
     """
     Create a new game session.
 
     Args:
         request (NewGameRequest): Player's initial choices
+        db (Session): Database session
 
     Returns:
         GameCreationResponse: Initial game state and session information
@@ -75,6 +85,26 @@ async def create_new_game(request: NewGameRequest):
             "weather": "clear"
         }
 
+        # Generate initial recruitable NPCs
+        recruitable_npcs = ai_gm.generate_recruitable_npcs(count=3)
+
+        # Convert NPC data to CharacterSheet objects
+        for i, npc_data in enumerate(recruitable_npcs):
+            # Create random race and class for NPC
+            import random
+            npc_race = random.choice(list(Race))
+            npc_class = random.choice(list(Class))
+
+            # Generate NPC character
+            npc_character = create_new_character(
+                name=npc_data.get("name", f"NPC_{i+1}"),
+                race=npc_race,
+                character_class=npc_class
+            )
+
+            # Add to recruitable list (not yet in party)
+            game_state.recruitable_characters.append(npc_character)
+
         # Add initial narrative from AI
         initial_prompt = f"Welcome {request.player_name}, a {request.player_race.value} {request.player_class.value}. {character_details['backstory'][:100]}... You find yourself in {world_data.get('region_name', 'the starting region')}."
         action_result = ai_gm.process_player_action(
@@ -82,25 +112,36 @@ async def create_new_game(request: NewGameRequest):
             f"Look around {world_data.get('region_name', 'the area')}"
         )
 
+        # Add initial conversation to history
+        initial_conversation = {
+            "timestamp": datetime.now().isoformat(),
+            "type": "narrative",
+            "content": action_result["narrative"]
+        }
+        game_state.conversation_history.append(initial_conversation)
+
+        # Save to database
+        game_state_dict = game_state.to_dict()
+        create_game_session(db, session_id, game_state_dict)
+
+        # Save initial conversation entries
+        save_conversation_entry(db, session_id, "narrative", action_result["narrative"])
+
         # Create response
         game_state_response = GameStateResponse(
             session_id=session_id,
             player_character=player_character,
             party_members=game_state.party_members,
+            recruitable_characters=game_state.recruitable_characters,
             active_quests=game_state.active_quests,
             world_context=game_state.world_context,
             inventory=game_state.inventory,
             combat_state=game_state.combat_state,
             narrative=action_result["narrative"],
             new_options=action_result["new_options"],
-            game_flags=game_state.game_flags
+            game_flags=game_state.game_flags,
+            conversation_history=game_state.conversation_history
         )
-
-        # Store session
-        active_sessions[session_id] = game_state
-
-        # Save game state
-        save_game(game_state)
 
         logger.info(f"New game created successfully with session ID: {session_id}")
 
@@ -119,12 +160,13 @@ async def create_new_game(request: NewGameRequest):
 
 
 @router.get("/{session_id}/state", response_model=GameStateResponse)
-async def get_game_state(session_id: str):
+async def get_game_state(session_id: str, db: Session = Depends(get_db)):
     """
     Get the current game state for a session.
 
     Args:
         session_id (str): Game session ID
+        db (Session): Database session
 
     Returns:
         GameStateResponse: Current game state
@@ -132,33 +174,31 @@ async def get_game_state(session_id: str):
     try:
         logger.info(f"Retrieving game state for session: {session_id}")
 
-        # Check active sessions first
-        if session_id in active_sessions:
-            game_state = active_sessions[session_id]
-        else:
-            # Try to load from file
-            save_file = f"saves/{session_id}.json"
-            if os.path.exists(save_file):
-                game_state = load_game(save_file)
-                active_sessions[session_id] = game_state
-            else:
-                raise HTTPException(
-                    status_code=status.HTTP_404_NOT_FOUND,
-                    detail=f"Game session {session_id} not found"
-                )
+        # Get game session from database
+        db_game_session = get_game_session(db, session_id)
+        if not db_game_session:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Game session {session_id} not found"
+            )
+
+        # Get conversation history from database
+        conversation_history = get_conversation_history(db, session_id)
 
         # Create response
         response = GameStateResponse(
-            session_id=game_state.session_id,
-            player_character=game_state.player_character,
-            party_members=game_state.party_members,
-            active_quests=game_state.active_quests,
-            world_context=game_state.world_context,
-            inventory=game_state.inventory,
-            combat_state=game_state.combat_state,
+            session_id=db_game_session.id,
+            player_character=db_game_session.character_data,
+            party_members=db_game_session.party_data,
+            recruitable_characters=db_game_session.recruitable_characters_data,
+            active_quests=db_game_session.quests_data,
+            world_context=db_game_session.world_data,
+            inventory=db_game_session.inventory_data,
+            combat_state=db_game_session.combat_state_data,
             narrative="",  # No new narrative for state requests
             new_options=[],  # No new options for state requests
-            game_flags=game_state.game_flags
+            game_flags=db_game_session.game_flags_data,
+            conversation_history=conversation_history
         )
 
         return response
@@ -174,13 +214,14 @@ async def get_game_state(session_id: str):
 
 
 @router.post("/{session_id}/action", response_model=GameStateResponse)
-async def process_game_action(session_id: str, request: ActionRequest):
+async def process_game_action(session_id: str, request: ActionRequest, db: Session = Depends(get_db)):
     """
     Process a player action in the game.
 
     Args:
         session_id (str): Game session ID
         request (ActionRequest): Player's action
+        db (Session): Database session
 
     Returns:
         GameStateResponse: Updated game state with narrative response
@@ -188,20 +229,54 @@ async def process_game_action(session_id: str, request: ActionRequest):
     try:
         logger.info(f"Processing action for session {session_id}: {request.action_type} - {request.value}")
 
-        # Get game state
-        if session_id not in active_sessions:
-            # Try to load from file
-            save_file = f"saves/{session_id}.json"
-            if os.path.exists(save_file):
-                game_state = load_game(save_file)
-                active_sessions[session_id] = game_state
-            else:
-                raise HTTPException(
-                    status_code=status.HTTP_404_NOT_FOUND,
-                    detail=f"Game session {session_id} not found"
-                )
-        else:
-            game_state = active_sessions[session_id]
+        # Get game session from database
+        db_game_session = get_game_session(db, session_id)
+        if not db_game_session:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Game session {session_id} not found"
+            )
+
+        # Create game state from database data
+        try:
+            created_at_str = db_game_session.created_at.isoformat() if db_game_session.created_at else datetime.now().isoformat()
+            last_updated_str = db_game_session.last_updated.isoformat() if db_game_session.last_updated else datetime.now().isoformat()
+        except Exception as e:
+            logger.error(f"Error accessing datetime fields: {str(e)}")
+            created_at_str = datetime.now().isoformat()
+            last_updated_str = datetime.now().isoformat()
+
+        game_state_dict = {
+            "session_id": db_game_session.id,
+            "player_character": db_game_session.character_data,
+            "party_members": db_game_session.party_data,
+            "recruitable_characters": db_game_session.recruitable_characters_data,
+            "active_quests": db_game_session.quests_data,
+            "world_context": db_game_session.world_data,
+            "inventory": db_game_session.inventory_data,
+            "combat_state": db_game_session.combat_state_data,
+            "game_flags": db_game_session.game_flags_data,
+            "conversation_history": [],
+            "created_at": created_at_str,
+            "last_updated": last_updated_str
+        }
+        game_state = GameState.from_dict(game_state_dict)
+
+        # Get conversation history from database
+        conversation_history = get_conversation_history(db, session_id)
+        game_state.conversation_history = conversation_history
+
+        # Add player action to conversation history
+        player_conversation = {
+            "timestamp": datetime.now().isoformat(),
+            "type": "player",
+            "content": request.value
+        }
+        game_state.conversation_history.append(player_conversation)
+
+        # Save player action
+        save_conversation_entry(db, session_id, "player", request.value)
+        save_game_action(db, session_id, request.action_type, request.value)
 
         # Process action with AI Game Master
         ai_gm = AIGameMaster()
@@ -210,32 +285,47 @@ async def process_game_action(session_id: str, request: ActionRequest):
             request.value
         )
 
-        # Update game state
-        game_state.last_updated = __import__('datetime').datetime.now()
+        # Add AI response to conversation history
+        ai_conversation = {
+            "timestamp": datetime.now().isoformat(),
+            "type": "narrative",
+            "content": action_result["narrative"]
+        }
+        game_state.conversation_history.append(ai_conversation)
+
+        # Save AI response
+        save_conversation_entry(db, session_id, "narrative", action_result["narrative"])
+        save_game_action(db, session_id, "ai_response", request.value, action_result["narrative"])
+
+        # Update game state in database
+        updated_game_state_dict = game_state.to_dict()
+        update_game_session(db, session_id, updated_game_state_dict)
 
         # Create response
         response = GameStateResponse(
             session_id=game_state.session_id,
             player_character=game_state.player_character,
             party_members=game_state.party_members,
+            recruitable_characters=game_state.recruitable_characters,
             active_quests=game_state.active_quests,
             world_context=game_state.world_context,
             inventory=game_state.inventory,
             combat_state=game_state.combat_state,
             narrative=action_result["narrative"],
             new_options=action_result["new_options"],
-            game_flags=game_state.game_flags
+            game_flags=game_state.game_flags,
+            conversation_history=game_state.conversation_history
         )
-
-        # Save updated game state
-        save_game(game_state)
 
         return response
 
     except HTTPException:
         raise
     except Exception as e:
+        import traceback
         logger.error(f"Failed to process game action: {str(e)}")
+        logger.error(f"Full traceback: {traceback.format_exc()}")
+        logger.error(f"Error type: {type(e)}")
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Failed to process game action: {str(e)}"
@@ -243,29 +333,29 @@ async def process_game_action(session_id: str, request: ActionRequest):
 
 
 @router.get("/{session_id}/save", response_model=dict)
-async def save_game_state(session_id: str):
+async def save_game_state(session_id: str, db: Session = Depends(get_db)):
     """
     Manually save the current game state.
 
     Args:
         session_id (str): Game session ID
+        db (Session): Database session
 
     Returns:
         dict: Save confirmation
     """
     try:
-        if session_id not in active_sessions:
+        # Get game session from database
+        db_game_session = get_game_session(db, session_id)
+        if not db_game_session:
             raise HTTPException(
                 status_code=status.HTTP_404_NOT_FOUND,
                 detail=f"Game session {session_id} not found"
             )
 
-        game_state = active_sessions[session_id]
-        save_path = save_game(game_state)
+        logger.info(f"Game state saved for session {session_id}")
 
-        logger.info(f"Game state saved for session {session_id} to {save_path}")
-
-        return {"message": "Game saved successfully", "save_path": save_path}
+        return {"message": "Game saved successfully", "session_id": session_id}
 
     except HTTPException:
         raise
@@ -274,4 +364,65 @@ async def save_game_state(session_id: str):
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Failed to save game state: {str(e)}"
+        )
+
+
+@router.post("/load", response_model=GameStateResponse)
+async def load_game_state(request: dict, db: Session = Depends(get_db)):
+    """
+    Load a saved game state.
+
+    Args:
+        request (dict): Request containing session_id
+        db (Session): Database session
+
+    Returns:
+        GameStateResponse: Loaded game state
+    """
+    try:
+        session_id = request.get("session_id")
+        if not session_id:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="session_id is required"
+            )
+
+        logger.info(f"Loading game state for session: {session_id}")
+
+        # Get game session from database
+        db_game_session = get_game_session(db, session_id)
+        if not db_game_session:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Game session {session_id} not found"
+            )
+
+        # Get conversation history from database
+        conversation_history = get_conversation_history(db, session_id)
+
+        # Create response
+        response = GameStateResponse(
+            session_id=db_game_session.id,
+            player_character=db_game_session.character_data,
+            party_members=db_game_session.party_data,
+            recruitable_characters=db_game_session.recruitable_characters_data,
+            active_quests=db_game_session.quests_data,
+            world_context=db_game_session.world_data,
+            inventory=db_game_session.inventory_data,
+            combat_state=db_game_session.combat_state_data,
+            narrative="Game loaded successfully. Continue your adventure!",
+            new_options=["Look around", "Check inventory", "Rest"],
+            game_flags=db_game_session.game_flags_data,
+            conversation_history=conversation_history
+        )
+
+        return response
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Failed to load game state: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to load game state: {str(e)}"
         )

@@ -1,0 +1,51 @@
+{
+  "session_id": "8ddf3a47-94a3-4a84-abb6-9bae5c92855b",
+  "player_character": {
+    "id": "char_6384",
+    "name": "TestCharacter",
+    "race": "Dwarf",
+    "character_class": "Priest",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 10,
+    "dexterity": 5,
+    "vitality": 12,
+    "intelligence": 14,
+    "spirit": 13,
+    "hit_points": 10,
+    "max_hit_points": 12,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 12,
+    "attack_bonus": 3,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Healing": 2,
+      "Charm": 2,
+      "Knowledge": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "Brokk Ironoak was born beneath the shadow of the Ironspire Mountains, in the war-scarred halls of Stonehelm Hold, where the clang of forge hammers and the chants of Moradin\u2019s clerics echoed through stone corridors. The son of a master smith and a temple acolyte, Brokk\u2019s childhood was steeped in both the unyielding discipline of dwarven martial traditions and the solemn rites of the Earthwarden faith. At sixteen, he was conscripted into the Stonehammer Legion, a renowned dwarven regiment tasked with defending the clan\u2019s borderlands against the encroaching Thrym giants. For a decade, he served as a frontline warrior-priest, his warhammer *Vengenstone* blessed to smite foes and heal wounded comrades alike. He earned his keep in the Battle of Black Anvil Ravine, where his defiant prayers turned a siege engine\u2019s volley into rubble, saving hundreds. Yet duty came at a cost: his brother Torin perished shielding him from a Thrym warlord\u2019s axe, leaving Brokk with a gash across his cheek and a vow to never let his clan falter again. But when Stonehelm\u2019s high priest declared his calling \u201cunfulfilled,\u201d Brokk was ordered to abandon his legion post and return home to tend to the temple\u2019s crumbling shrines\u2014a decision that clashed with his restless spirit and lingering guilt.  \n\nBrokk\u2019s faith, once unshakable, began to fray like old chainmail. He saw the temple\u2019s rituals as hollow compared to the raw, urgent power of the battlefield, where divine magic had meaning beyond incense and ceremony. One night, after a drunken argument with his mentor over the worth of \u201cstagnant prayer,\u201d he stole into the catacombs and unearthed an ancient map etched on a copper plate\u2014a relic pointing to the Sunken Forge of Thalassar, a legendary site said to hold artifacts capable of reshaping mountains. Declaring this his true path, he abandoned Stonehelm, declaring himself \u201ca hammer",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "**Mistveil Basin**",
+    "world_description": "Nestled between the jagged peaks of the Azurefang Mountains and the glassy expanse of Lake Yuremiru, the Mistveil Basin is a realm of ancient beauty and simmering tension. The basin\u2019s dense cedar forests and terraced rice paddies are perpetually shrouded in a silver mist that locals claim is the breath of the *Yurekami*, spirits of forgotten ancestors. Despite its serenity, the region bears scars of the past: crumbling stone *tora* (pagodas) dot the landscape, remnants of a lost empire, while eerie *yokai* tales whisper of forests that consume unwary travelers. The people here are a blend of stoic mountain clans, superstitious fisherfolk, and pragmatic merchants drawn by the basin\u2019s rare *kyoseki* (crystal) deposits, which power eldritch machinery and arcane rituals alike. Yet the veil of peace is thin. Strange sicknesses plague crops in the west, while spectral lights flicker above Lake Yuremiru at dusk. The *Blackmoon Syndicate*, a clandestine guild of rogue alchemists, has begun smuggling kyoseki through forbidden tunnels carved beneath the mountains. The Oni-Kage clan, oni-blooded lords of the region, blame the Syndicate for destabilizing the sacred balance\u2014but their iron-fisted response only deepens tensions. Amid the turmoil, pilgrims flock to the Garama Shrine, seeking answers from the *Shinko Sect* of mystic monks, who speak cryptically of an \"ancient debt\" owed to the land.",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T03:43:10.742882",
+  "last_updated": "2025-08-15T03:43:35.043442"
+}

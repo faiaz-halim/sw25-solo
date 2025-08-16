@@ -1,0 +1,51 @@
+{
+  "session_id": "c201ee44-b9a6-4ebc-8b6c-754e31431f81",
+  "player_character": {
+    "id": "char_9201",
+    "name": "TestPlayer",
+    "race": "Human",
+    "character_class": "Fighter",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 16,
+    "dexterity": 8,
+    "vitality": 12,
+    "intelligence": 17,
+    "spirit": 8,
+    "hit_points": 10,
+    "max_hit_points": 12,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 14,
+    "attack_bonus": 5,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Sword": 2,
+      "Armor": 2,
+      "Dodge": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "Elric of Hollowbrook was born beneath the thatched roof of a modest blacksmith\u2019s cottage in the rural village of Thornmere, where the clang of hammers and the scent of iron and smoke were his first lullabies. His father, Thadric, was a pragmatic man who valued labor over luxury, while his mother, Liora, a former herbalist turned homemaker, often spoke in hushed tones of the \"Old World\" tales her father had once shared\u2014stories of lost kingdoms and arcane relics buried beneath the earth. From a young age, Elric was taught to wield a hammer as deftly as a sword, his hands calloused by chores and his mind restless with questions. Yet while his peers accepted their roles as farmers or tradesmen, he scoured the village archives for fragments of forgotten lore, sneaking into the dusty cellar of the local chapel to study crumbling scrolls about the Empire of the East\u2019s vanished scholars. His curiosity often clashed with his father\u2019s warnings: \u201cKnowledge is a blade with no hilt, boy. It cuts those who aren\u2019t careful.\u201d But Elric\u2019s hunger for understanding grew, fueled by a childhood incident when he discovered a rusted dagger hidden in the walls of his family\u2019s home\u2014its hilt etched with symbols that matched those in Liora\u2019s old journals. The blade, later identified as a relic of the Dwarven Wars, was said to have belonged to a knight who vanished during the Siege of Ironreach, a event that left Thornmere\u2019s ancestors with scars and secrets.\n\nWhen bandits razed Thornmere at sixteen, leaving only smoldering ruins and whispers of a cursed treasure, Elric\u2019s resolve hardened. His father died shielding the village\u2019s children, and his mother\u2019s final words\u2014\u201cFind the truth, but don\u2019t let it consume you\u201d\u2014haunted him. The raiders, clad in tattered crimson cloaks, spoke of a \u201cShadowbound Oracle\u201d who had foretold the attack, a figure tied to the same ancient texts Elric had obsessed over. Though the village\u2019s elders dismissed the oracle as myth, Elric\u2019s search for answers led him to a hidden chamber beneath the chapel, where he found a map etched in blood and a journal detailing a lost library in the ruins of Vorthal\u2019s Reach, a city swallowed by the Forest of Mir. He left Thornmere with nothing but a rusted dagger, a satchel of stolen scrolls, and a vow to uncover the truth behind the siege. His journey took him to the mercantile port of Duskspire, where he joined a mercenary band to fund his quest, trading his strength for coin and his curiosity for survival.\n\nElric\u2019s personality is a clash of pragmatism and obsession; he\u2019s a man who\u2019ll mend a broken sword with steady hands but spend hours deciphering a single line of archaic script. He\u2019s fiercely loyal to those who earn his trust, yet his relentless pursuit of knowledge makes him prone to reckless gambles, often dismissing danger in favor of a \u201cclue\u201d or \u201clegend.\u201d His quirk of scribbling notes in the margins of every book he reads has earned him both admiration and exasperation, and his habit of carrying a vial of his mother\u2019s lavender oil\u2014a reminder of home\u2014hints at a softer side buried beneath his hardened exterior. Though he claims to seek fortune to rebuild Thornmere, his true drive is a gnawing need to confront the forces that erased his past, whether that\u2019s the Shadowbound Oracle, the bandits\u2019 masters, or the ancient powers tied to the dagger he carries.\n\nThe map he found in Thornmere\u2019s cellar is only one piece of a larger puzzle, and rumors of a hidden archive in Vorthal\u2019s Reach suggest that the library he seeks might hold secrets about the Dwarven Wars\u2014and the reason the bandits targeted his village. Elric\u2019s path could intersect with the Order of the Dawnspire, a clandestine group of scholars obsessed with the same relics, or with a surviving heir of the knight who once wielded his dagger. His journey also risks drawing the attention of the Crimson Veil, a cult that believes the Shadowbound Oracle\u2019s prophecies are still active, and whose leader, a former Duskspire noble named Malrik Voss, has a personal stake in Elric\u2019s quest. The Forest of Mir, with its sentient trees and ancient traps, remains both a peril and a promise, its depths\u85cf\u7740 the answers Elric needs\u2014and the dangers he may not be prepared to face.",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "",
+    "world_description": "",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T05:02:00.547496",
+  "last_updated": "2025-08-15T05:02:00.547501"
+}

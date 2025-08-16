@@ -1,0 +1,48 @@
+{
+  "session_id": "e2c88aba-f4a5-4c59-8d0d-e6a069a9e3f4",
+  "player_character": {
+    "id": "char_3627",
+    "name": "HerpADerp",
+    "race": "Dwarf",
+    "character_class": "Druid",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 19,
+    "dexterity": 5,
+    "vitality": 12,
+    "intelligence": 11,
+    "spirit": 15,
+    "hit_points": 10,
+    "max_hit_points": 12,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 12,
+    "attack_bonus": 6,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "Thrain Stonecrag was born in the shadow of the Ironspine Mountains, where his clan carved grandeur from stone and guarded ancient subterranean vaults. Yet while his kin reveled in the clang of hammers and the warmth of forge fires, Thrain found himself slipping away to the forested foothills, entranced by the whisper of wind through pine and the secrets etched into the mossy stones of forgotten ruins. His fascination with the surface world\u2019s mysteries clashed with the traditionalist values of Clan Stonecrag, culminating in",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "**The Emerald Shogunate of Tsukimino**",
+    "world_description": "Nestled in the eastern reaches of Alframe, the Emerald Shogunate of Tsukimino is a land of mist-wrapped valleys, tea terraces cascading down jade-green hills, and ancient wooden castles crowned with curved pagoda roofs. The region is ruled by Lord Daimyo Takahiro Tachibana, a stoic warrior descended from the legendary Dragonfly Clan, whose banners ripple with the emerald sigil of a coiled serpent. Tsukimino\u2019s people are a blend of pragmatic merchants, disciplined samurai retainers, and mystic *yamabushi* (mountain priests) who dwell in cliffside hermitages. Despite its tranquil surface, the Shogunate teeters on the edge of unrest: whispers of supernatural omens plague the countryside, while rebellious mountain clans in the north reject the Daimyo\u2019s authority. At the heart of the region lies the **Celestial Shrine**, a crumbling temple said to guard a fragment of the Sky Pillar\u2014a relic from Alframe\u2019s mythic past that binds the land\u2019s seasons to the will of unseen deities. The region\u2019s culture is steeped in the *Way of the Blossom*, a philosophy of harmony with nature, yet its survival depends on a delicate balance of steel and diplomacy. The forests conceal hidden dangers\u2014spectral *yokai*, rogue ninjas from the fallen *Foxfire Syndicate*, and remnants of an ancient empire buried beneath the earth. Tsukimino\u2019s markets bustle with traders bartering for silk, rare medicinal herbs, and the fabled *moonsteel* ore mined from the southern cliffs. But as the twin moons of Alframe wax crimson, the shrine\u2019s energies grow erratic, causing crops to wither overnight and rivers to freeze in midsummer. The player\u2019s adventure begins in this volatile crucible of tradition, ambition, and ancient magic.",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T02:45:23.932631",
+  "last_updated": "2025-08-15T02:45:23.932637"
+}

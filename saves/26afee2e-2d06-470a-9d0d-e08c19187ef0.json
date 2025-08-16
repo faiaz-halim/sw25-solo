@@ -1,0 +1,48 @@
+{
+  "session_id": "26afee2e-2d06-470a-9d0d-e08c19187ef0",
+  "player_character": {
+    "id": "char_8921",
+    "name": "HerpADerp",
+    "race": "Human",
+    "character_class": "Paladin",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 12,
+    "dexterity": 7,
+    "vitality": 11,
+    "intelligence": 6,
+    "spirit": 9,
+    "hit_points": 10,
+    "max_hit_points": 11,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 13,
+    "attack_bonus": 4,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "**Kageyama Prefecture**",
+    "world_description": "Nestled at the eastern edge of the Alframe Continent, Kageyama Prefecture is a land of contradictions\u2014a realm where ancient mountain spirits clash with the ambitions of mortal clans, and where lush bamboo forests conceal forgotten atrocities. The region is dominated by the jagged peaks of Mount Shinkage, whose smoldering crater has long been revered by the Shinto-inspired Ojisan Shrine as the dwelling place of a dormant dragon deity. Below, terraced rice fields and tea plantations stretch toward the mist-shrouded Yami River, their tranquility shattered by recent incursions of undead raiders and mutated \"shadowbeasts\" from the northern Ashen Moors. Samurai lords of the Tokugawa-descended Hoshizora Clan feud openly with the mercantile Tsurugi-ren Guild, whose shadowy dealings have grown bolder since strange black water began seeping from the Yami\u2019s headwaters. The air hums with tension, and even the oldest villagers whisper that the land itself is cursed. Kageyama\u2019s culture blends the rigid honor of its samurai aristocracy with the superstitions of its rural peasantry. Lanterns carved from yokai bones light the streets of its towns, while shrine maidens perform exorcisms with paper talismans and bamboo flutes. Yet beneath this harmony lies decay: roads are crumbling, trade routes are plagued by bandits, and the once-reliable magic of the Ojisan Shrine has grown erratic. In the capital, *shadow ops* among the Tsurugi-ren\u2019s agents hint at deeper secrets, while rumors of a vanished fishing village upstream from the Yami River have spread like wildfire.",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T02:13:23.156217",
+  "last_updated": "2025-08-15T02:13:23.156221"
+}

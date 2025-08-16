@@ -1,0 +1,51 @@
+{
+  "session_id": "5e86909b-674b-4fe2-9728-2125c0d89ca4",
+  "player_character": {
+    "id": "char_3558",
+    "name": "HerpADerp",
+    "race": "Elf",
+    "character_class": "Priest",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 10,
+    "dexterity": 12,
+    "vitality": 15,
+    "intelligence": 12,
+    "spirit": 11,
+    "hit_points": 10,
+    "max_hit_points": 13,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 16,
+    "attack_bonus": 3,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Healing": 2,
+      "Charm": 2,
+      "Knowledge": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "A Elf Priest who has chosen the path of adventure for reasons known only to them.",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "The Borderlands",
+    "world_description": "A frontier region where civilization meets the wild unknown. Ancient ruins dot the landscape alongside small farming villages and trading posts.",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T03:21:29.142852",
+  "last_updated": "2025-08-15T03:21:29.142855"
+}

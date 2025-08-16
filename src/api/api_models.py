@@ -87,6 +87,7 @@ class GameStateResponse(BaseModel):
     session_id: str
     player_character: Optional[CharacterSheet] = None
     party_members: List[CharacterSheet] = []
+    recruitable_characters: List[CharacterSheet] = []  # Characters available for recruitment
     active_quests: List[Quest] = []
     world_context: Dict[str, Any] = {}
     inventory: List[Item] = []
@@ -94,6 +95,7 @@ class GameStateResponse(BaseModel):
     narrative: str = ""  # Current narrative text from the GM
     new_options: List[str] = []  # New action options from the GM
     game_flags: Dict[str, bool] = {}
+    conversation_history: List[Dict] = []  # Conversation history between player and AI GM
 
 
 class GameCreationResponse(BaseModel):

@@ -1,0 +1,48 @@
+{
+  "session_id": "c4b3c128-f8f6-495a-88b1-9944abf18e1c",
+  "player_character": {
+    "id": "char_1467",
+    "name": "HerpADerp",
+    "race": "Elf",
+    "character_class": "Ranger",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 11,
+    "dexterity": 8,
+    "vitality": 8,
+    "intelligence": 19,
+    "spirit": 12,
+    "hit_points": 10,
+    "max_hit_points": 10,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 14,
+    "attack_bonus": 3,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "Born beneath the silver-barked canopies of the Elven Forest of Altea, Lirael Veythari was raised among the whispering leaves and crystalline streams that crad",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "Kazamidori Vale",
+    "world_description": "The Vale\u2019s beauty masks its fragility. Centuries ago, it was a battlefield where dragon-riding knights repelled the Beastmen Hordes, leaving behind petrified scales that now fertilize the soil. Today, farmers whisper of \"earth-sickness\"\u2014crops withering overnight, livestock growing fangs, and shadows moving against the wind. Travelers speak of the \"Silent Bloom,\" a creeping blight turning forests into crystalline graveyards. With the Althean Church distracted by politics in the capital and the Shogunate\u2019s patrols stretched thin, Kazamidori has become a haven for desperate souls and hidden threats alike.",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T02:37:53.092544",
+  "last_updated": "2025-08-15T02:38:59.034204"
+}

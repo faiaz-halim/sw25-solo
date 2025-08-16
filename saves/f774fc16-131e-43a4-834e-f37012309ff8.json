@@ -1,0 +1,51 @@
+{
+  "session_id": "f774fc16-131e-43a4-834e-f37012309ff8",
+  "player_character": {
+    "id": "char_2836",
+    "name": "HerpADerp",
+    "race": "Dwarf",
+    "character_class": "Rogue",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 13,
+    "dexterity": 16,
+    "vitality": 14,
+    "intelligence": 11,
+    "spirit": 16,
+    "hit_points": 10,
+    "max_hit_points": 12,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 18,
+    "attack_bonus": 4,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Stealth": 3,
+      "Lockpicking": 2,
+      "Deceive": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "Thrain Stonefoot was born into the deep halls of the Ironspire Clan, nestled beneath the jagged peaks of the Spinebreaker Mountains, where dwarven stonemasons carved legends into bedrock and guarded their secrets as fiercely as their gold. His father, a master artisan, taught him the sacred rhythms of the chisel and hammer, but Thrain\u2019s restless spirit yearned for more than the dim glow of subterranean forges. While other dwarflings memorized clan sagas, he slipped into the labyrinthine tunnels beneath the city, learning to move silent as a shadow and blend into the dark\u2014a skill that soon turned to theft when he discovered the lucrative secrets of the surface-world traders who frequented Ironspire\u2019s markets. By his 50th year, he\u2019d become a whisper in the alleys of the dwarven enclave, a cutpurse who stole not for hunger, but for the thrill of outwitting those who flaunted their wealth. His life of crime ended abruptly when he attempted to pilfer a relic from a shrine dedicated to Moradin, the dwarves\u2019 forgefather: a pitted sapphire said to hold the soul of a fallen clan hero. The moment his fingers brushed the stone, a vision seared his mind\u2014a mountain collapsing, a dragon\u2019s roar, and a command: *Leave this path.* Terrified and guilt-ridden, Thrain abandoned his old life, fleeing to the surface with only his tools, a stolen cloak, and the gem tucked into his belt like a guilty secret.  \n\nNow, Thrain roams the world above, torn between the base instincts of a rogue and",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "Kizuna Vale",
+    "world_description": "The Vale\u2019s isolation has preserved traditions long faded elsewhere: paper talismans flutter from every doorway to ward off spirits, artisans craft armor from lacquered bamboo and spirit-steel, and tea ceremonies double as diplomatic negotiations. Yet beneath this serenity pulses the Valley\u2019s lifeblood\u2014the aurora-like *Ki no Kawa* (\"River of Spirit\")\u2014a visible current of magic flowing through the land. Lately, its light has dimmed to a sickly violet, and those who drink from its tributaries report fevered visions of a \"Stone Emperor\" buried deep below the mountains. Travelers speak of unnatural silence in the forests, where even insects dare not chirp after dusk.",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T03:24:18.219181",
+  "last_updated": "2025-08-15T03:24:18.219185"
+}

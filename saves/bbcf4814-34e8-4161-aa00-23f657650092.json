@@ -1,0 +1,51 @@
+{
+  "session_id": "bbcf4814-34e8-4161-aa00-23f657650092",
+  "player_character": {
+    "id": "char_6230",
+    "name": "NaniButa",
+    "race": "Dwarf",
+    "character_class": "Priest",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 15,
+    "dexterity": 8,
+    "vitality": 18,
+    "intelligence": 10,
+    "spirit": 14,
+    "hit_points": 10,
+    "max_hit_points": 14,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 14,
+    "attack_bonus": 5,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Healing": 2,
+      "Charm": 2,
+      "Knowledge": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "In the shadowed depths of the Ironspine Mountains, where the forges of Clan Stonehewer glowed like dying stars, a newborn dwarf was found wrapped in a soot-stained blanket atop a slag heap, his skin marked by faint, glowing runic sigils that vanished at dawn. The clan\u2019s high priest, Thrain Ironheart, took the child as a divine omen, naming him *Durgan Emberseek* and raising him within the temple of Reorx, god of the forge and creator of the dwarven race. Though Clan Stonehewer valued tradition and bloodlines, Durgan\u2019s origins remained an enigma\u2014no records matched the symbols on his skin, and even the eldest sages whispered that his discovery coincided with a rift in the mountain\u2019s ancient magma veins, a phenomenon they deemed \"the Breath of the World\u2019s Wound.\" Trained in the rites of the priesthood, Durgan proved a zealous acolyte, his sermons fire-forged and his healing spells suffused with emberlight. Yet his most fervent devotion was not to ritual but to questions. Why had the earth itself seemed to reject him, casting him out to the surface? What lay beyond the clan\u2019s subterranean halls, where maps faded into myth? These obsessions grew sharper when he uncovered a shattered obsidian tablet in the temple archives, its glyphs hinting at a lost dwarven sect that worshipped Reorx\u2019s \"shadow face\"\u2014the god of secrets and uncreation. Thrain warned him against delving further, but curiosity, Durgan learned, was a hunger fiercer than flame.\n\nDurgan\u2019s departure from the Ironspine was neither quiet nor dignified. After stealing a fragment of the tablet and evading a clan patrol sent to retrieve him, he emerged into the Mycenian Highlands, a land of alien skies and brittle grass. There, he encountered *Eldrin Voss*, a Mycenian scholar obsessed with the same shadow sect, who claimed the relics could unlock \"the First Forge\"\u2014a primordial realm where Reorx\u2019s hammer had shattered the void. Eldrin guided him to the ruins of Khaz Durum, a dwarven hold abandoned after a cultic uprising, and together they deciphered glyphs that spoke of the Codex of the Forgotten, a tome said to hold the names of all dwarves ever cast out of clan chronicles. But Eldrin vanished in a cave-in, leaving Durgan with only a cryptic map to the Ashen Wastes, where the Codex\u2019s first shard lay buried. By then, Durgan\u2019s quirks had solidified: he muttered scripture while forging weapons, pried into strangers\u2019 tales like a prospector into gold-bearing stone, and bore a tick that made him scratch his temple\u2019s stone altar when agitated. His curiosity, once a spark, now roared like a furnace.\n\nNow wandering the Empire of Kain\u2019s fractious provinces, Durgan styles himself a \"priest of the unlit tunnels,\" trading blessings for coin while chasing rumors of his past. He seeks fortune not for greed but to fund expeditions into the world\u2019s forgotten corners, where his glowing runes sometimes pulse in resonance with ancient horrors buried beneath roads and rivers. His adventures have made him bold and restless, though his faith remains unshaken\u2014a paradox that intrigues and unnerves those he meets. In the port city of Cassadria, he crossed paths with *Captain Seraphine Redblade*, a mercenary who hires him for his uncanny ability to sense unstable magic in ruins. Seraphine\u2019s crew believes Durgan\u2019s secrets are worth exploiting, and Durgan tolerates their opportunism, knowing their ships can carry him to the Isles of Drift, where a lost Stonehewer outpost might hold answers. Yet whispers linger: the Codex fragment he carries hums louder near Nastyg, the black fortress of the godless cult that once poisoned Khaz Durum, and some suspect Durgan\u2019s runic markings mirror those carved into Nastyg\u2019s outer gates.\n\nDurgan\u2019s contradictions fuel his legend. He quotes Reorx\u2019s teachings about \"steadfastness\" while scaling cliffs no dwarf should dare, and his prayers often end with the question, \"What burns beneath?\" Personality? A blend of dwarven grit and maddening fixity\u2014his voice rumbles like a forge\u2019s bellows, and his beard is streaked with soot from igniting campfires with a touch. Quirks: he insists on blessing every doorframe he passes, muttering, \"Let no truth be barred,\" and hoards shards of broken pottery, convinced they are pieces of the Codex. Hooks? The cult of the shadow forge is stirring again, its agents seeking a priest who *matches* Durgan\u2019s description\u2014a living key to the First Forge\u2019s power. Eldrin\u2019s map hints at a connection to Alkayl, a vanished Mycenian city, where a rival priestess, *Veyra the Hollowed*, might hold the next shard. And then there are the dreams: a recurring vision of a dwarven mother\u2019s face, etched in flame, who cries his name in a tongue no living Stonehewer knows. Adventure, Durgan believes, is the only path to answers\u2014and to melting the mystery of his birth into light.",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "**The Emerald Vale of Y\u016bgure**",
+    "world_description": "Nestled in the eastern shadow of the Twin Serpent Peaks, the Emerald Vale of Y\u016bgure is a land of mist-laden forests, terraced rice paddies, and crumbling ancestral shrines. Time seems to flow slower here, where the air hums with the whispers of forest spirits (*y\u014dkai*) and the ruins of an ancient civilization lie hidden beneath moss-covered stone. The vale itself is a patchwork of feudal estates governed by rival clans, their wooden watchtowers peering warily across fog-wrapped valleys. Despite its beauty, unease festers: the once-benign spirits have grown violent, the harvests sicken, and travelers speak of black smoke billowing from the peaks. Samurai patrol the roads less frequently now, leaving villages vulnerable to wandering *oni* (demons) and rogue *shugenja* (mystics) who twist sacred rituals for dark ends. The vale\u2019s heart is dominated by the **Whispering Grove**, a grove of luminescent silverleaf trees said to be planted by the god Izanagi himself. Locals avoid it after dusk, when the leaves murmur in languages long dead. To the south, the **Mirror Lake** reflects not the sky, but fragmented visions of other realms\u2014a phenomenon that has intensified in recent months, luring cultists and treasure hunters alike. The region\u2019s lifeline is the **River Kurogane**, whose waters have turned brackish near its source, tainting wells and sparking conflicts between settlements.",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T04:09:50.119268",
+  "last_updated": "2025-08-15T04:09:50.119273"
+}

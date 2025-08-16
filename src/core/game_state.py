@@ -15,6 +15,7 @@ class GameState:
         self.session_id = session_id or f"session_{int(datetime.now().timestamp())}"
         self.player_character: Optional[CharacterSheet] = None
         self.party_members: List[CharacterSheet] = []
+        self.recruitable_characters: List[CharacterSheet] = []  # Characters available for recruitment
         self.active_quests: List[Quest] = []
         self.completed_quests: List[Quest] = []
         self.world_context: Dict = {
@@ -26,6 +27,7 @@ class GameState:
         self.inventory: List[Item] = []
         self.combat_state: Optional[Dict] = None
         self.game_flags: Dict[str, bool] = {}  # For tracking story flags
+        self.conversation_history: List[Dict] = []  # Track conversation between player and AI GM
         self.created_at = datetime.now()
         self.last_updated = datetime.now()
 
@@ -102,12 +104,14 @@ class GameState:
             "session_id": self.session_id,
             "player_character": self.player_character.model_dump() if self.player_character else None,
             "party_members": [char.model_dump() for char in self.party_members],
+            "recruitable_characters": [char.model_dump() for char in self.recruitable_characters],
             "active_quests": [quest.model_dump() for quest in self.active_quests],
             "completed_quests": [quest.model_dump() for quest in self.completed_quests],
             "world_context": self.world_context,
             "inventory": [item.model_dump() for item in self.inventory],
             "combat_state": self.combat_state,  # This would need special handling for complex objects
             "game_flags": self.game_flags,
+            "conversation_history": self.conversation_history,
             "created_at": self.created_at.isoformat(),
             "last_updated": self.last_updated.isoformat()
         }
@@ -121,8 +125,32 @@ class GameState:
         # For now, we'll just restore the basic structure
         state.world_context = data.get("world_context", {})
         state.game_flags = data.get("game_flags", {})
-        state.created_at = datetime.fromisoformat(data["created_at"])
-        state.last_updated = datetime.fromisoformat(data["last_updated"])
+        state.conversation_history = data.get("conversation_history", [])
+
+        # Handle datetime fields safely
+        try:
+            created_at_str = data.get("created_at")
+            if created_at_str:
+                try:
+                    state.created_at = datetime.fromisoformat(created_at_str)
+                except (ValueError, TypeError):
+                    state.created_at = datetime.now()
+            else:
+                state.created_at = datetime.now()
+        except Exception:
+            state.created_at = datetime.now()
+
+        try:
+            last_updated_str = data.get("last_updated")
+            if last_updated_str:
+                try:
+                    state.last_updated = datetime.fromisoformat(last_updated_str)
+                except (ValueError, TypeError):
+                    state.last_updated = datetime.now()
+            else:
+                state.last_updated = datetime.now()
+        except Exception:
+            state.last_updated = datetime.now()
 
         return state
 

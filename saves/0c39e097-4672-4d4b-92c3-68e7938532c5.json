@@ -1,0 +1,51 @@
+{
+  "session_id": "0c39e097-4672-4d4b-92c3-68e7938532c5",
+  "player_character": {
+    "id": "char_1766",
+    "name": "TestPlayer",
+    "race": "Human",
+    "character_class": "Fighter",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 10,
+    "dexterity": 11,
+    "vitality": 15,
+    "intelligence": 8,
+    "spirit": 14,
+    "hit_points": 10,
+    "max_hit_points": 13,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 15,
+    "attack_bonus": 3,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Sword": 2,
+      "Armor": 2,
+      "Dodge": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "Elias Varn, born in the humble village of Hollowbrook along the mist-shrouded edges of the Empire of the Sword, was the son of a blacksmith and a herbalist who toiled under the shadow of the local lord\u2019s keep. His childhood was marked by the clang of hammer on iron and the scent of dried roots, where his father instilled in him the virtues of discipline and resilience, and his mother whispered tales of the ancient kingdoms that once ruled the land before the Empire\u2019s rise. Though his family lacked wealth or influence, they possessed a quiet dignity, and Elias learned early that strength lay not in titles but in the ability to endure. However, his curiosity often led him to the crumbling ruins of the Old Forest, where he scavenged fragments of forgotten lore from the remains of a bygone era. A local hermit, Thaddeus, a former scholar of the Arcane Conclave, took notice of the boy\u2019s hunger for knowledge and taught him to read, revealing stories of lost artifacts and forbidden tomes that hinted at power beyond the Empire\u2019s reach. This mentorship, however, ended abruptly when Thaddeus vanished during a storm, leaving behind a cryptic journal that spoke of a \"Crown of the First King\" hidden in the ruins of Vael\u2019Thir, a city swallowed by the sands of the southern dunes.\n\nElias\u2019s drive to seek adventure stems from a dual yearning: to elevate his family\u2019s station through wealth and to uncover the truths buried by the Empire\u2019s relentless expansion. After his father\u2019s death in a bandit raid that left Hollowbrook\u2019s granary in ashes, Elias inherited the family\u2019s forge but lacked the means to protect his mother from the lord\u2019s growing demands. A chance encounter with a traveling merchant, who spoke of the fabled \"Vaults of the Drowned\" in the coastal city of Marrowmere, planted the seed of his quest. He sold his father\u2019s tools to fund a journey south, but the merchant\u2019s maps were vague, and the rumors of treasure were laced with warnings of cursed relics and spectral guardians. Elias\u2019s determination is tempered by a pragmatic streak\u2014he knows the Empire\u2019s laws are strict, but he also believes that power, once found, can be wielded to challenge those who oppress. His personality is a blend of stubbornness and quiet introspection; he speaks little of his past, but his hands often trace the edges of ancient carvings he finds, as if seeking answers in their grooves.\n\nNow, as a fighter with a blade forged from his father\u2019s last iron and a satchel filled with Thaddeus\u2019s notes, Elias wanders the Sword Coast, drawn by the promise of both fortune and forbidden knowledge. His journey has already drawn the attention of the Order of the Silver Flame, who suspect him of meddling with relics tied to their suppressed histories, and the mercenary guilds of Marrowmere, who seek him for his unique skills in deciphering old-world texts. A lingering mystery surrounds Thaddeus\u2019s disappearance\u2014was he murdered by those who feared his research, or did he uncover something so dangerous that even the Empire\u2019s archives dared not record it? Elias\u2019s path is intertwined with the echoes of the past, and his quest may one day force him to confront not only the remnants of ancient civilizations but also the moral cost of wielding knowledge that was meant to be forgotten. For now, he walks the line between adventurer and outcast, his heart set on the sands of Vael\u2019Thir, where the answers to his family\u2019s struggles and his own ambitions might finally be found.",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "",
+    "world_description": "",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T05:31:30.800407",
+  "last_updated": "2025-08-15T05:31:30.800411"
+}

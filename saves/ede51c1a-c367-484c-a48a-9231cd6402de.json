@@ -1,0 +1,51 @@
+{
+  "session_id": "ede51c1a-c367-484c-a48a-9231cd6402de",
+  "player_character": {
+    "id": "char_9343",
+    "name": "TestPlayer2",
+    "race": "Elf",
+    "character_class": "Wizard",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 10,
+    "dexterity": 9,
+    "vitality": 9,
+    "intelligence": 9,
+    "spirit": 14,
+    "hit_points": 10,
+    "max_hit_points": 11,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 14,
+    "attack_bonus": 3,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Magic": 3,
+      "Knowledge": 2,
+      "Language": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "A Elf Wizard who has chosen the path of adventure for reasons known only to them.",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "The Thornwood",
+    "world_description": "An ancient forest where the trees grow so thick and twisted that little sunlight penetrates to the forest floor. Vines choke the ancient paths, and the air is thick with the scent of decay and blooming night flowers.",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T05:16:52.844327",
+  "last_updated": "2025-08-15T05:16:52.844330"
+}

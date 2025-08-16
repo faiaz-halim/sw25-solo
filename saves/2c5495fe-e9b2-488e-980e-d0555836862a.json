@@ -1,0 +1,51 @@
+{
+  "session_id": "2c5495fe-e9b2-488e-980e-d0555836862a",
+  "player_character": {
+    "id": "char_1586",
+    "name": "TestCharacter",
+    "race": "Dwarf",
+    "character_class": "Priest",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 15,
+    "dexterity": 14,
+    "vitality": 15,
+    "intelligence": 14,
+    "spirit": 12,
+    "hit_points": 10,
+    "max_hit_points": 13,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 17,
+    "attack_bonus": 5,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Healing": 2,
+      "Charm": 2,
+      "Knowledge": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "Thrain Stonehelm was born in the shadow of the Ironspire Mountains, where the halls of Hearthstone Hold echoed with the clang of warhammers and the chants of Moradin\u2019s faithful. His clan, the Stonehelms, were once renowned for forging armor that could turn a dragon\u2019s claw, but their legacy had faded into bitter feuds over dwindling ore veins. Thrain\u2019s father, a master smith, insisted he serve in the clan\u2019s militia to \"harden his spine before his steel,\" a common rite among dwarves of the Holds. For a decade, he manned the battlements of the Stoneheart Marches, enduring the brutal sieges of the feral ogrins and the icy raids of the Frostspire elves. It was there, during the Siege of Emberwatch, that he first felt Moradin\u2019s call\u2014a vision of the All",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "**The Shattered Prefecture**",
+    "world_description": "Nestled in the eastern reaches of the Alframe Continent, the Shattered Prefecture is a land where crumbling feudal traditions collide with untamed wilderness. Once governed by the venerable Akamatsu Clan, the region fell into disarray after the mysterious disappearance of its patriarch, Lord Akamatsu Hiroto, five years ago. The prefecture\u2019s terrain is a patchwork of dense bamboo forests, mist-shrouded mountains, and fertile river valleys now scarred by bandit raids and territorial skirmishes. Japanese-inspired *machi* (towns) with curved tiled roofs and carved torii gates stand alongside half-ruined castles and forgotten shrines guarded by weatherworn *oni* statues\u2014some of which whisper rumors of stirring to life at night. The air is thick with lingering *ki* (spirit energy), and local monks claim the land itself mourns its fractured lineage. Though the imperial court in Heianfuku City to the west nominally oversees the prefecture, power has splintered among rival clans, mercenary guilds, and shadowy syndicates. Travelers speak of strange lights flickering over the River of Echoes and eerie flute music echoing from abandoned tea plantations, hinting at deeper supernatural forces at play. For adventurers, the prefecture offers both peril and promise: ancient relics lie buried in its mountains, while ambitious warlords vie for dominance in a power vacuum that threatens to unleash old demons\u2014both literal and metaphorical.",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T04:01:01.144836",
+  "last_updated": "2025-08-15T04:01:31.625314"
+}

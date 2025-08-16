@@ -1,0 +1,48 @@
+{
+  "session_id": "df8ce10b-7725-42ae-9126-cdbc2a1ec9bb",
+  "player_character": {
+    "id": "char_3602",
+    "name": "HerpADerp",
+    "race": "Elf",
+    "character_class": "Ranger",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 10,
+    "dexterity": 10,
+    "vitality": 11,
+    "intelligence": 14,
+    "spirit": 7,
+    "hit_points": 10,
+    "max_hit_points": 11,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 15,
+    "attack_bonus": 3,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "Thandor Silverleaf had always been a child of the wilds, his elven heritage binding him to the whispering forests of Elenareth even as his restless spirit yearned beyond their ancient borders. Born to a clan of wardens in the Elvenwood, he was trained from youth in the ways of the ranger\u2014tracking beasts through mist-shrouded glades, reading the stars as easily as elven script, and loosing arrows with the precision of a hunting hawk. Yet discipline chafed against his curious nature. When he was but a stripling of 120 years (barely an adult by elven standards), he abandoned his post after a heated quarrel with his mentor, Maeren, over what Thandor saw as the clan\u2019s rigid isolationism. He wandered southward into the human kingdoms, where he joined a mercenary company to \u201csee the world,\u201d only to find himself complicit in a raid that left a frontier village burned and its people slain. The memory of a child\u2019s scream, echoing through smoke-filled streets, haunts him still. Gu",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "",
+    "world_description": "",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T03:39:59.801956",
+  "last_updated": "2025-08-15T03:39:59.801962"
+}

@@ -1,0 +1,51 @@
+{
+  "session_id": "f1d93c07-4cfe-4af3-8290-aefd918c2147",
+  "player_character": {
+    "id": "char_2382",
+    "name": "Test Hero",
+    "race": "Human",
+    "character_class": "Fighter",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 14,
+    "dexterity": 8,
+    "vitality": 8,
+    "intelligence": 11,
+    "spirit": 13,
+    "hit_points": 10,
+    "max_hit_points": 10,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 14,
+    "attack_bonus": 4,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Sword": 2,
+      "Armor": 2,
+      "Dodge": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "Marcus Thane was born in the fortified town of Greyhold, nestled in the harsh northern reaches of the Sword Coast where winter's bite could kill a man faster than any blade. His father served as a sergeant in the Greyhold Militia, and from the age of twelve, Marcus drilled with wooden swords and learned the rigid discipline that kept their isolated community safe from bandits and worse things that prowled the frozen wilderness. By eighteen, he had earned his place in the militia proper, spending six years patrolling ice-choked roads and standing watch on the ancient walls that protected their settlement from the remnants of an old war that had left twisted magic and hungry shadows in its wake. The military taught him that honor was more than just a word carved on monuments\u2014it was the steel in a man's spine and the oath he kept even when no one was watching.\n\nDuring his final winter tour, Marcus experienced what the village elders called a \"true calling\"\u2014a moment when fate itself seemed to whisper his name. While standing sentinel at the Northern Gate, he witnessed a strange aurora dance across the star-filled sky, its green and silver light forming symbols he somehow understood without knowing how he knew them. The village's aging priestess, Mother Aelwyn, claimed it was a sign that the gods had marked him for greater deeds, that his sword was meant for more than just protecting Greyhold's cattle and stores. Though practical by nature and skeptical of mysticism, Marcus felt something shift within him that night. When spring arrived and a merchant caravan from the southern kingdoms passed through Greyhold, he made the decision that would change his life forever\u2014he traded his militia tabard for a traveler's cloak and a purse of hard-earned silver earned from years of service, setting out to find whatever destiny had marked him beneath those dancing lights.\n\nNow, three years later, Marcus has proven himself a capable warrior in the courts and battlefields of the southern realms, but fortune has remained elusive. He carries with him a collection of small tokens\u2014iron coins from Greyhold, a vial of water from the sacred spring where Mother Aelwyn blessed his sword, and a scrap of parchment bearing the strange symbols from that aurora, which a learned sage in Baldur's Gate claimed were ancient dwarven script speaking of \"the chosen guardian and the crown of winter's return.\" His military training makes him naturally protective of his companions, though his northern directness can sometimes offend more refined sensibilities, and he has an odd habit of checking the night sky for aurora even in the warmest months. Marcus fights with methodical precision, favoring heavy blades and solid armor, but he's always ready to drop coin on a good tale or a better weapon, believing that every tavern keeper and blacksmith might hold the key to unlocking the mystery of his calling\u2014or at least lead him to the fortune that has so far proven as slippery as ice.",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "The Ashen Wastes",
+    "world_description": "A desolate expanse of black sand and jagged obsidian shards, where the remnants of an ancient volcanic catastrophe have left the land scarred and lifeless. Twisted spires of volcanic glass pierce the sky, and the air shimmers with unnatural heat.",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T20:33:43.695176",
+  "last_updated": "2025-08-15T20:34:26.842980"
+}

@@ -1,0 +1,51 @@
+{
+  "session_id": "b7c79f94-3cfd-49c2-8bd4-82346a262c6a",
+  "player_character": {
+    "id": "char_7919",
+    "name": "TestPlayer",
+    "race": "Human",
+    "character_class": "Fighter",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 11,
+    "dexterity": 12,
+    "vitality": 13,
+    "intelligence": 7,
+    "spirit": 9,
+    "hit_points": 10,
+    "max_hit_points": 12,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 16,
+    "attack_bonus": 3,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Sword": 2,
+      "Armor": 2,
+      "Dodge": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "Kael Vorn was born in the shadowed alleys of Drakemire, a port city where the scent of salt and betrayal lingered in equal measure. The son of a disgraced smuggler, he learned early that survival depended on cunning as much as courage. His father, Eryk Vorn, had once commanded the Black Tide Guild, a syndicate of cutthroats and thieves who thrived on the fringes of the Wraithbone Coast, but a failed heist against a merchant-prince\u2019s fleet left the family in ruin. Kael\u2019s childhood was a tapestry of stolen goods and whispered secrets, his hands trained to pick locks while his mind absorbed the art of deception from his mother, a former courtier who had once danced with nobles before descending into the underbelly of Drakemire. By sixteen, he was a shadow in the docks, a skilled thief who could slip past guards and vanish into the fog, but the guild\u2019s violent rivalries and his father\u2019s lingering debts bound him to a life of peril. When Eryk was killed during a botched assassination attempt by the Crimson Chain, a mercenary group tied to the merchant-prince, Kael\u2019s loyalty to his family\u2019s name collided with his growing disdain for the criminal world. He vowed to avenge his father\u2019s death, but the guild\u2019s leadership, fearing retribution, exiled him, leaving him with little more than a rusted dagger and a stolen ledger detailing his father\u2019s final, unresolved deals.\n\nNow, years later, Kael roams the Sword World as a Fighter, his once-rough hands now calloused from years of steel and struggle. Though he abandoned the guild, the lessons of his past remain: he moves with the silence of a thief, his eyes always scanning for hidden threats, and his words carefully measured to avoid revealing too much. Yet beneath his hardened exterior lies a man haunted by the weight of his family\u2019s legacy. The ledger, now a tattered relic in his possession, hints at a cache of lost artifacts buried along the Wraithbone Coast\u2014relics tied to Eryk\u2019s final mission, which might not only redeem his father\u2019s name but also grant Kael the wealth to escape the life he once despised. His motivation is twofold: the pursuit of fortune to rebuild what was lost and the need to confront the Crimson Chain, whose leader, a scarred mercenary named Varyn Kest, still walks free. Kael\u2019s reputation as a rogue with a code\u2014though he\u2019d never admit it\u2014has earned him both enemies and wary allies, and his journey is marked by a restless energy, as if every step forward is a bid to outrun the ghosts of Drakemire.\n\nA man of contradictions, Kael is both a pragmatist and a reluctant idealist. He\u2019ll steal a horse to save a village but balk at robbing the desperate, a trait that once cost him a lucrative contract with the Crimson Chain. His quirk of checking pockets for loose coins, a habit from his days as a thief, often draws laughter from companions, though he insists it\u2019s \u201ca survival instinct.\u201d He carries his father\u2019s dagger, its hilt etched with the Vorn family crest, and speaks in a clipped, wary tone, never fully trusting those who offer him aid. Yet his sense of duty compels him to protect the innocent, a moral compass that clashes with his past. This duality makes him a figure of intrigue in the Sword World, where his actions could draw the attention of the Black Tide\u2019s remnants, the merchant-prince\u2019s heirs, or even the enigmatic Order of the Dawn, a faction that once sought Eryk\u2019s secrets. Kael\u2019s story is one of redemption and reckoning, and his path may intersect with those who know the truth about his father\u2019s death\u2014or those who wish to exploit it. The Wraithbone Coast, with its treacherous waters and forgotten ruins, remains a siren call, its mysteries tied to both his personal history and the larger struggles of the realm.",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "",
+    "world_description": "",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T05:04:43.576943",
+  "last_updated": "2025-08-15T05:04:43.576948"
+}

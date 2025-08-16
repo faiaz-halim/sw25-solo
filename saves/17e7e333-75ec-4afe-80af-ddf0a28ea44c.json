@@ -1,0 +1,51 @@
+{
+  "session_id": "17e7e333-75ec-4afe-80af-ddf0a28ea44c",
+  "player_character": {
+    "id": "char_2198",
+    "name": "TestCharacter",
+    "race": "Human",
+    "character_class": "Fighter",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 13,
+    "dexterity": 10,
+    "vitality": 7,
+    "intelligence": 9,
+    "spirit": 12,
+    "hit_points": 10,
+    "max_hit_points": 10,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 15,
+    "attack_bonus": 4,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Sword": 2,
+      "Armor": 2,
+      "Dodge": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "Kael of Durn\u2019s Hollow was found as an infant on the blood-soaked shores of the Shattered Reach, wrapped in a tattered cloak embroidered with the sigil of a long-dead noble house, the House of Valtor. The villagers of Durn\u2019s Hollow, a hardy coastal settlement known for its shipwrights and storm-tossed trade, took him in after a tempest nearly washed his cradle into the sea, but his origins remained an enigma. Raised by a blacksmith named Thoren and his wife Elira, Kael grew up with the calloused hands of a laborer and the restless spirit of a man born under a curse. His adoptive parents, though kind, often spoke in hushed tones about the strange markings on his skin\u2014faint, swirling patterns that glowed like embers under moonlight, a trait unheard of among the human inhabitants of the Reach. As he came of age, the Order of the Dawn, a knightly fraternity sworn to protect the region\u2019s coastal cities from pirate incursions and shadowy cults, took notice of his uncanny strength and reflexes. They offered him training, but Kael\u2019s true motivation was always tied to the question of who he was. The duty he felt was not to the Order, but to the ghost of his past, a legacy buried beneath the waves of the Shattered Reach.\n\nDespite his loyalty to the Order, Kael\u2019s heart yearned for the unknown. He was a man of quiet intensity, his blue eyes always scanning the horizon as if expecting a storm to rise from it. His adoptive father, Thoren, once remarked that Kael\u2019s hands \u201cheld the weight of a sword they\u2019d never wielded,\u201d a phrase that haunted him. The villagers whispered that he was a bastard child of a Valtor lord, but the Order\u2019s records were silent on such matters. When a merchant from the Eastern Wastes offered a map to the ruins of Valtor Keep\u2014a crumbling fortress said to hold secrets of the old world\u2014Kael seized the chance, not just for the treasure it promised, but for the chance to unravel the truth. His quest for fortune was twofold: to secure riches that might buy answers and to prove himself worthy of the legacy he could not remember. Yet the deeper he delved, the more he felt the pull of something greater, as if the sea itself was guiding him toward a destiny entwined with the ancient conflicts of the Reach.\n\nKael\u2019s personality was a blend of stubborn pragmatism and unshakable honor, shaped by the Order\u2019s rigid codes but tempered by the wild, untamed spirit of the coast. He carried a battered short sword, a relic from his childhood, and a habit of muttering to himself when anxious\u2014a trait his fellow knights found endearing, though they never asked what he was saying. His quirk of checking his reflection in any available surface, a superstition born from the fear that his true face might be something other than human, often drew strange glances. But it was his relentless curiosity that defined him, a trait that led him to clash with the Order\u2019s more conservative members who preferred secrecy over exploration. The Shattered Reach\u2019s history was a tapestry of forgotten wars and cursed artifacts, and Kael\u2019s search for his roots inevitably drew him into its tangled threads. He once stumbled upon a fragment of a Valtor family crest in a pirate\u2019s hoard, its design eerily similar to the markings on his skin, but the clues only deepened the mystery.\n\nNow, with the Order\u2019s blessing (and wary glances), Kael sails beyond the Reach, chasing rumors of a lost Valtor heirloom said to lie in the ruins of the Iron Covenant\u2019s stronghold, a faction notorious for their experiments with forbidden magic. His journey is driven by a need to reconcile his past with his present, but the deeper he ventures, the more he suspects his origins are tied to a larger conflict\u2014a war between the Covenant and the Order that once shattered the region. Along the way, he might cross paths with a rogue Valtor scholar, a pirate queen with a grudge against the Covenant, or a cultist who claims to know the truth of his bloodline. Each step could unearth a secret that challenges everything he believes about himself, but Kael\u2019s resolve is unyielding. After all, a man without a name is a man without a legacy, and he intends to carve one worth remembering.",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "",
+    "world_description": "",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T04:42:17.973519",
+  "last_updated": "2025-08-15T04:42:17.973523"
+}

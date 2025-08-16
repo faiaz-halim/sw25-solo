@@ -1,0 +1,51 @@
+{
+  "session_id": "67a9013e-a14b-4f2e-9b6a-1d1a1f8803f1",
+  "player_character": {
+    "id": "char_5842",
+    "name": "HerpADerp",
+    "race": "Halfling",
+    "character_class": "Priest",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 12,
+    "dexterity": 17,
+    "vitality": 16,
+    "intelligence": 11,
+    "spirit": 15,
+    "hit_points": 10,
+    "max_hit_points": 13,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 18,
+    "attack_bonus": 4,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Healing": 2,
+      "Charm": 2,
+      "Knowledge": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "Thistle Thistleby was born in the sun-dappled village of Bramblebrook, nestled deep within the Halfling Hinterlands, where the rolling meadows and ancient oaks whispered secrets to those who listened. The daughter of a humble farmer and a midwife, she grew up tending to livestock and learning the art of herbal remedies from her mother, while her father taught her the value of quiet labor and the importance of community. From an early age, Thistle was drawn to the village\u2019s small shrine to Erevan, the god of nature and fertility, where she would sit for hours watching the priestess tend to the flame that symbolized the land\u2019s life force. Though her family had no noble blood, they revered the old ways, and Thistle\u2019s piety was evident even as a child\u2014she once spent a week collecting wildflowers to offer at the shrine, convinced they would bring rain to a drought-stricken field. Her duty to her people was ingrained, but so was her restlessness; she often wondered what lay beyond the Hinterlands, where the stories of the priestess spoke of distant temples and legendary miracles. When a blight began to wither the crops and the village\u2019s healer succumbed to a mysterious illness, Thistle\u2019s faith was tested. The priestess, despite her devotion, could not cure the affliction, and the villagers\u2019 prayers seemed to fade into the wind. Thistle, though still young, felt the weight of her responsibility\u2014she could not let her people suffer without trying to find answers.\n\nDetermined to seek aid from the larger world, Thistle left Bramblebrook at seventeen, carrying nothing but a satchel of herbs, a carved wooden charm from Erevan, and a journal filled with sketches of plants and prayers. Her journey led her to the city of Elderglen, where she apprenticed under a reclusive druid-priest who taught her to channel divine energy through nature\u2019s rhythms. Yet, the druid\u2019s teachings were shadowed by rumors of a corrupt sect of clerics who hoarded sacred knowledge for power, a revelation that left Thistle wary of organized religion. She returned to the Hinterlands with newfound skills but also a gnawing doubt: if the gods were truly watchful, why had they allowed her village to wither? This question became her driving force, intertwining her sense of duty with a yearning for fortune\u2014not just wealth, but the truth behind the divine. Her personality was a blend of traditional humility and an unshakable curiosity; she\u2019d often pause mid-prayer to jot down observations about the stars or the behavior of animals, and her habit of speaking to plants as if they were old friends made her both endearing and perplexing to others.\n\nThistle\u2019s adventure reason stems from a dual need: to prove her worth to her people and to uncover the source of the blight that haunts her homeland. She believes that the answers lie in the ancient ruins of the Verdant Veil, a forgotten site where Erevan\u2019s followers once communed with the spirits of the land. However, her quest has drawn the attention of the Order of the Crimson Flame, a militant faction that views her independent spirit as heretical. During her travels, she also encountered a wandering bard who spoke of a lost relic\u2014a sacred staff of Erevan\u2014hidden in the ruins, which could either heal her village or unleash a catastrophic force if misused. Now, Thistle walks the line between faith and doubt, her heart split between the safety of her roots and the allure of the unknown. She carries a hidden resentment toward the nobles of the High Vale, who once dismissed her people as insignificant, and a secret hope that her adventures might one day earn their respect. Her journey is not just for fortune, but for redemption, and her every step is guided by the mantra she carved into her charm: \u201cThe land does not forget, but neither should we.\u201d",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "**The Shattered Veil of Kurokage**",
+    "world_description": "",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T05:44:31.809015",
+  "last_updated": "2025-08-15T05:46:11.892334"
+}

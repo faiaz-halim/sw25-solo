@@ -1,0 +1,51 @@
+{
+  "session_id": "e4f22fcc-7afd-4231-a493-8a8011fd91b9",
+  "player_character": {
+    "id": "char_8739",
+    "name": "OogaBooga",
+    "race": "Dwarf",
+    "character_class": "Priest",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 8,
+    "dexterity": 15,
+    "vitality": 12,
+    "intelligence": 9,
+    "spirit": 11,
+    "hit_points": 10,
+    "max_hit_points": 12,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 17,
+    "attack_bonus": 2,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Healing": 2,
+      "Charm": 2,
+      "Knowledge": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "Thrain Ironsong was born in the deep halls of the Irondeep Clan, a venerable dwarven house nestled within the Gravenholt Mountains, where the stone was said to hum with the echoes of ancient hammer strikes. From a young age, Thrain displayed an uncanny ability to carve intricate reliefs that seemed to pulse with life, their chiselwork so precise it was whispered that the stones themselves leaned into his touch. His mother, a weaver of ceremonial tapestries, and his father, a bard who chronicled the clan\u2019s history through ballads, nurtured his talents, but Thrain\u2019s true passion lay in the sacred art of stonecraft, a practice revered by his people as both a craft and a divine offering. Yet, while his hands shaped the physical, his soul yearned for something deeper\u2014a connection to the spiritual forces that the clan\u2019s priests claimed governed the earth\u2019s veins. At sixteen, during the Rite of the First Hammer, Thrain\u2019s carving of a Moradin-drawn mural in the Stoneheart Cathedral stirred the temple\u2019s high priest, who saw in him the mark of the gods. Reluctantly, Thrain abandoned his artistic aspirations to train as a priest, his duty to his clan and faith overriding his personal desires, though he never stopped carrying a small, weathered chisel in his satchel, a relic from his childhood.\n\nDespite his devotion to the faith, Thrain\u2019s artistic inclinations never faded. He began incorporating his craft into sacred rituals, creating effigies that blended the divine with the mortal, a practice that both intrigued and unsettled his superiors. His reputation grew when he restored the shattered Pillar of the First Founding, a relic of the clan\u2019s origins, using a technique that merged traditional dwarven stonework with a melody he\u2019d composed, said to have been blessed by Moradin himself. Yet, the Irondeep Clan\u2019s fortunes began to wane as the nearby mining town of Emberhold fell to a plague of greed-driven dwarven rivalries, and the clan\u2019s vaults grew thin. Thrain\u2019s duty to his people clashed with his growing curiosity about the wider world, where he heard rumors of lost shrines and ancient artifacts that could revive their prosperity. When a vision of the god Moradin urged him to seek the \"Star of the Deep,\" a fabled gem said to hold the light of the First Flame, Thrain saw an opportunity\u2014not just to restore his clan\u2019s wealth, but to prove that art and faith could coexist in ways the temple had never imagined.\n\nThrain\u2019s personality is a blend of stubborn pragmatism and quiet idealism, often debating the role of creativity in divine service while humming old mining tunes under his breath. He\u2019s known to pause mid-prayer to sketch designs for new shrines, and his habit of leaving small carvings in sacred spaces has earned him both admiration and murmurs of disapproval. His quest for the Star of the Deep has already drawn the attention of the Irondeep\u2019s rival, the Ashenvein Clan, who believe the gem is rightfully theirs, and of the enigmatic Order of the Shattered Crown, a group of rogue priests who claim the Star is a key to unlocking a forgotten dwarven empire. Along the way, Thrain hopes to uncover the truth behind his mother\u2019s vanished tapestries, which hinted at a lost temple buried beneath the ruins of the Stormspire Peaks\u2014a place where the line between art and divinity might blur, and where his journey could either redeem his clan or shatter it forever.",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "**Haruka no Kabe** (The Far Wall)",
+    "world_description": "",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T04:36:34.785517",
+  "last_updated": "2025-08-15T04:36:34.785521"
+}

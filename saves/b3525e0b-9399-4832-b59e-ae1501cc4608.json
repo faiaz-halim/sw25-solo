@@ -1,0 +1,51 @@
+{
+  "session_id": "b3525e0b-9399-4832-b59e-ae1501cc4608",
+  "player_character": {
+    "id": "char_3545",
+    "name": "OogaBooga",
+    "race": "Dwarf",
+    "character_class": "Priest",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 13,
+    "dexterity": 9,
+    "vitality": 14,
+    "intelligence": 9,
+    "spirit": 8,
+    "hit_points": 10,
+    "max_hit_points": 12,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 14,
+    "attack_bonus": 4,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Healing": 2,
+      "Charm": 2,
+      "Knowledge": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "Kaelgrim Stonehelm was born in the iron-bound halls of Tharzun\u2019s Rest, a venerable dwarven clan nestled deep within the Irondeep Mountains, where the air hummed with the clang of hammers and the scent of smelted ore. From a young age, he was marked by the sacred rites of the Moradin\u2019s Keep, a temple dedicated to the god of craftsmanship and protection, where his family served as both blacksmiths and spiritual guides. His early years were spent under the tutelage of his father, Thrain Stonehelm, a master smith whose anvil was said to echo with the blessings of the gods, and his mother, Eira, a priestess who taught him that strength lay not just in stone but in the unyielding resolve of the faithful. But when the clan\u2019s sacred vault was raided by a band of beastmen from the Blightspire Wastes, Kaelgrim\u2019s world shattered. His parents perished defending the temple\u2019s relic, a crystallized shard of the First Flame, which the invaders sought to corrupt. The attack left Tharzun\u2019s Rest in ruins, its people scattered, and Kaelgrim orphaned, his faith in the gods shaken but not broken. He was taken in by the Order of the Crimson Veil, a nomadic sect of dwarven priests who wandered the mountain passes, preaching justice and safeguarding ancient shrines, and there he found a new purpose: to avenge his clan and ensure no other dwarven heart would know such despair.\n\nNow, Kaelgrim\u2019s journey is driven by a dual fire\u2014both the need to reclaim his people\u2019s lost legacy and the unwavering pursuit of justice against those who would exploit the vulnerable. He carries a battered warhammer, *Dawn\u2019s Resolve*, forged from the remnants of his father\u2019s forge, and a pendant etched with his clan\u2019s sigil, a fractured hammer encircling a flame. Though his faith has been tested, he clings to the teachings of Moradin, believing that even in the darkest mines, light can be reforged. His personality is a blend of gruff pragmatism and quiet conviction; he speaks little but his words carry the weight of a thousand strikes against an anvil, and he has a habit of inspecting every surface for traps, a relic of the siege that left his clan\u2019s halls riddled with hidden dangers. Yet beneath his stoic exterior lies a deep empathy for those wronged, a trait that often puts him at odds with his more hardened kin. He seeks adventure not just for treasure, but to uncover the truth behind the beastmen\u2019s alliance with a shadowy cult known as the Ashen Covenant, whose influence he suspects played a role in his clan\u2019s destruction.\n\nThe scars of his past are etched into his psyche, fueling a relentless drive to protect others from the same fate. He has a particular disdain for necromancers and those who profane sacred sites, viewing them as the true enemies of the dwarven way. However, his quest has also drawn the attention of the Irondeep Council, which suspects the Ashen Covenant of meddling in ancient dwarven ley lines, and Kaelgrim\u2019s search for answers may lead him into the heart of a political storm between the mountain clans and the surface world. A lingering question haunts him: was the attack on Tharzun\u2019s Rest a random act of savagery, or part of a larger scheme to destabilize the dwarven kingdoms? His journey could intersect with the remnants of his clan\u2019s rival, the Stonehelm\u2019s ancient feud with the Durnholm family, whose mines now lie under the control of a suspiciously prosperous human guild. As he travels, Kaelgrim\u2019s faith and fury may clash with the moral ambiguities of the surface, forcing him to confront whether justice is best served through blades or by rebuilding what was lost.",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "",
+    "world_description": "",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T04:48:36.139417",
+  "last_updated": "2025-08-15T04:48:36.139422"
+}

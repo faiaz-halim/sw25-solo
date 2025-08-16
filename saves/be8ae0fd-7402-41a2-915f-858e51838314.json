@@ -1,0 +1,51 @@
+{
+  "session_id": "be8ae0fd-7402-41a2-915f-858e51838314",
+  "player_character": {
+    "id": "char_2733",
+    "name": "TestCharacter",
+    "race": "Dwarf",
+    "character_class": "Priest",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 14,
+    "dexterity": 8,
+    "vitality": 17,
+    "intelligence": 13,
+    "spirit": 10,
+    "hit_points": 10,
+    "max_hit_points": 13,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 14,
+    "attack_bonus": 4,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Healing": 2,
+      "Charm": 2,
+      "Knowledge": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "In the shadowed halls of the Temple of the Forge Eternal, nestled deep within the Ironspire Mountains, young Brokkar Stoneheart was raised on hymns of fire and stone. Born to a lineage of dwarven smiths who had long served the temple\u2019s sacred ovens\u2014where crucibles melted ore to craft relics for the clergy\u2014he was dedicated to the priesthood at birth as part of a covenant between his clan and the order of Moradin. His childhood was a rhythm of prayers to the All-Father, lessons in the alchemical arts of healing, and the clang of hammers shaping both metal and doctrine. Under the stern tutelage of High Priest Thrain, whose beard was said to",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "Kazamidori Vale",
+    "world_description": "The Vale\u2019s beauty masks a deeper unease. Once-generous rivers now run sluggish near starfall sites, fish with too many eyes washing ashore. Villagers whisper of \"Silent Nights\"\u2014when all birds cease singing and the stars vanish behind a veil of black mist. Here, tradition clashes with innovation: conservative *Shinto*-inspired temples condemn Gadgetry as *kami*-disrupting heresy, while the Imperial Survey Corps drills for Ry\u016bseki crystals to fuel Alframe\u2019s war machines. Travelers arrive seeking fortune or enlightenment, unaware they tread on land where the fabric of the world is fraying.",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T03:38:00.949887",
+  "last_updated": "2025-08-15T03:38:00.949892"
+}

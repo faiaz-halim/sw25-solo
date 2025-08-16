@@ -1,0 +1,51 @@
+{
+  "session_id": "8571847c-a180-461c-b8e6-85252fc23875",
+  "player_character": {
+    "id": "char_1660",
+    "name": "HerpADerp",
+    "race": "Human",
+    "character_class": "Fighter",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 9,
+    "dexterity": 16,
+    "vitality": 13,
+    "intelligence": 10,
+    "spirit": 12,
+    "hit_points": 10,
+    "max_hit_points": 12,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 18,
+    "attack_bonus": 3,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Sword": 2,
+      "Armor": 2,
+      "Dodge": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "A Human Fighter who has chosen the path of adventure for reasons known only to them.",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "The Borderlands",
+    "world_description": "A frontier region where civilization meets the wild unknown. Ancient ruins dot the landscape alongside small farming villages and trading posts.",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T01:40:54.797873",
+  "last_updated": "2025-08-15T01:40:54.797882"
+}

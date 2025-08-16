@@ -1,0 +1,51 @@
+{
+  "session_id": "750efacd-5d12-4030-ad42-513dfd6f792a",
+  "player_character": {
+    "id": "char_7737",
+    "name": "TestPlayer",
+    "race": "Human",
+    "character_class": "Fighter",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 11,
+    "dexterity": 10,
+    "vitality": 8,
+    "intelligence": 12,
+    "spirit": 8,
+    "hit_points": 10,
+    "max_hit_points": 10,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 15,
+    "attack_bonus": 3,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Sword": 2,
+      "Armor": 2,
+      "Dodge": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "Kaelen Voss was born in the bustling port city of Eldermere, where the clang of blacksmiths\u2019 hammers mingled with the scent of saltwater and parchment. As the son of a merchant lord and a scribe renowned for transcribing lost dialects, he was raised in a household that prized both wealth and wisdom, though his parents often clashed over which held greater value. From a young age, Kaelen displayed a restless curiosity, sneaking into his mother\u2019s study to pore over dusty tomes while his father dragged him into the family\u2019s trade halls to learn the art of negotiation. His dual heritage\u2014practical and intellectual\u2014shaped him into a man who could bargain with a noble as easily as he could debate the tenets of ancient warrior philosophies. Yet it was the Order of the Iron Quill, a reclusive knightly fraternity that merged martial training with scholarly pursuits, that ultimately claimed him. At fourteen, he was taken in as an apprentice, where he mastered the longsword and the quill in equal measure, memorizing the histories of fallen empires and the tactics of legendary battalions. But while his peers focused on battlefield strategy, Kaelen fixated on the margins of texts\u2014footnotes about forgotten relics, cryptic symbols in war maps, and whispers of a lost codex detailing the rituals of the First Warriors. His obsession with these secrets earned him both admiration and suspicion, for the Iron Quill guarded knowledge as fiercely as it did its swords.\n\nWhen Kaelen uncovered a forbidden passage in the *Chronicles of the Black Citadel*, detailing a ritual that could harness the power of the \"Eclipse Blade\"\u2014a weapon said to have been forged during the Sundering of the Old World\u2014he defied his mentors to pursue the legend. His discovery led to a schism within the Order, as the High Scribe of Eldermere deemed the text too dangerous to study, fearing it might awaken the dormant sorcery of the ancient warlords. Branded a heretic and stripped of his titles, Kaelen was exiled from the Iron Quill, though not before secretly copying the passage into a journal bound in dragonhide. Now, he roams the Sword World as a mercenary, seeking the Eclipse Blade not for power, but to prove the Order\u2019s fears were misplaced. His motivation is twofold: the thrill of uncovering truths buried by time and the hope of redeeming his name by demonstrating that knowledge and combat need not be at odds. Yet beneath his disciplined exterior lies a man haunted by the belief that the blade\u2019s true purpose was misunderstood, and that its rediscovery could prevent another age of ruin.\n\nKaelen\u2019s personality is a blend of the scholar and the soldier\u2014quick to debate the ethics of ancient treaties but just as quick to draw his sword when provoked. He speaks in riddles, often quoting obscure battle hymns or archaic laws to confuse opponents, and carries a satchel of weathered scrolls that he insists \"hold the key to the world\u2019s survival.\" His peers describe him as both relentless and reckless, a man who will risk his life to decipher a faded inscription or salvage a crumbling manuscript. Despite his academic leanings, he distrusts magic, believing it to be a crutch for the weak, yet he secretly envies the arcane scholars who can unlock secrets with a flick of a wand. This internal conflict manifests in his interactions; he\u2019ll aid a wizard only if it serves his goals, but he\u2019ll never join a coven. His current path is driven by a map etched on a vellum fragment he obtained from a rogue archivist in the Drowned Kingdoms, which hints at the Eclipse Blade\u2019s resting place beneath the ruins of Varyndor\u2019s lost capital, Thalassar. If he succeeds, he could restore his honor\u2014or trigger a catastrophe the Order feared. The map\u2019s origins, however, remain unclear, and its ink bears the sigil of the Cult of the Forgotten Flame, a shadowy group that once sought to dismantle the Iron Quill\u2019s influence. This connection could draw Kaelen into a web of conspiracies, as the cult\u2019s agents may still hunt the blade, and his former mentors might send spies to ensure he never finds it.",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "",
+    "world_description": "",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T05:42:39.558229",
+  "last_updated": "2025-08-15T05:42:39.558233"
+}

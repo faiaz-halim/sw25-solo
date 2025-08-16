@@ -1,0 +1,51 @@
+{
+  "session_id": "a707fe81-a62e-4c17-8b78-ad938470cb62",
+  "player_character": {
+    "id": "char_4981",
+    "name": "TestCharacter",
+    "race": "Dwarf",
+    "character_class": "Priest",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 17,
+    "dexterity": 12,
+    "vitality": 10,
+    "intelligence": 13,
+    "spirit": 19,
+    "hit_points": 10,
+    "max_hit_points": 11,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 16,
+    "attack_bonus": 5,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Healing": 2,
+      "Charm": 2,
+      "Knowledge": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "**Yamashiro-no-Kuni (\"Mountain Castle Land\")**",
+    "world_description": "Nestled in the shadow of the jagged Kurotama Mountains, Yamashiro-no-Kuni is a mist-wreathed province where ancient traditions clash with encroaching darkness. The region is a patchwork of terraced rice fields, cedar forests sacred to mountain monks, and feudal strongholds built to withstand both bandits and the wrath of nature itself. Once a proud domain ruled by the Tsukihana Clan, Yamashiro-no-Kuni has fallen into uneasy twilight since the mysterious death of its daimy\u014d five years ago. Now, the province is governed by a regent accused of corruption, while whispers of y\u014dkai sightings and undead hordes emerging from the Kuroi Swamp chill the hearts of villagers. The people here are stoic and resourceful, relying on hidden shrines, samurai retainers, and the enigmatic Yama-Biko herbalists to survive. Yet, the land\u2019s beauty remains haunting: cherry blossoms bloom unnaturally white in winter, hot springs bubble with sulfuric hues, and forgotten ruins cling to cliffsides, hinting at secrets buried beneath the earth. At the heart of the region lies Mount Kurotama\u2019s summit, said to house the tomb of a fallen *oni* warlord sealed by ancient clerics. Lately, tremors have shaken the valleys, and smoke curls from fissures in the mountain\u2014a sign that the seal may be weakening. Meanwhile, the blackened Kuroi Swamp festers in the east, its toxic miasma spreading as travelers vanish along its borders. Local *yamabushi* (mountain ascetics) claim the land itself is \"bleeding,\" rejecting the living as it calls forth the dead. Yamashiro-no-Kuni is a place where superstition and survival are equally vital, and where adventurers must tread carefully between politics, occult forces, and the untamed wilds.",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T03:26:55.704786",
+  "last_updated": "2025-08-15T03:26:55.704792"
+}

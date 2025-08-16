@@ -94,22 +94,45 @@
         <!-- Game Screen -->
         <div id="game-screen" class="screen hidden">
             <div class="game-layout">
-                <!-- Main Game Area -->
-                <div class="main-content">
-                    <!-- Narrative Window -->
-                    <div id="narrative-window" class="narrative-window">
-                        <div id="narrative-content" class="narrative-content"></div>
+                <!-- Left Sidebar - Background only -->
+                <div class="left-sidebar">
+                    <!-- Character Background Panel -->
+                    <div id="character-background-panel" class="panel character-background-panel">
+                        <h3>Character Background</h3>
+                        <div id="character-backstory" class="character-backstory"></div>
                     </div>
-
-                    <!-- Player Input -->
-                    <form id="input-form" class="input-form">
-                        <input type="text" id="player-input" placeholder="What would you like to do?" required>
-                        <button type="submit">Send</button>
-                    </form>
                 </div>
 
-                <!-- Side Panels -->
-                <div class="side-panels">
+                <!-- Main Game Area with Tabs -->
+                <div class="main-content">
+                    <!-- Tab Navigation -->
+                    <div class="tab-navigation">
+                        <button class="tab-btn active" data-tab="game">Game</button>
+                        <button class="tab-btn" data-tab="history">Conversation History</button>
+                    </div>
+
+                    <!-- Game Tab Content -->
+                    <div id="game-tab" class="tab-content active">
+                        <!-- Narrative Window -->
+                        <div id="narrative-window" class="narrative-window">
+                            <div id="narrative-content" class="narrative-content"></div>
+                        </div>
+
+                        <!-- Player Input -->
+                        <form id="input-form" class="input-form">
+                            <input type="text" id="player-input" placeholder="What would you like to do?" required>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+
+                    <!-- History Tab Content -->
+                    <div id="history-tab" class="tab-content">
+                        <div id="history-tab-content" class="history-content"></div>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar - Character Sheet, Party, and Game Management -->
+                <div class="right-sidebar">
                     <!-- Character Sheet Panel -->
                     <div id="character-sheet" class="panel character-sheet">
                         <h3>Character Sheet</h3>
@@ -121,6 +144,47 @@
                         <h3>Party Members</h3>
                         <div id="party-members"></div>
                     </div>
+
+                    <!-- Game Management Panel -->
+                    <div id="game-management-panel" class="panel game-management-panel">
+                        <h3>Game Management</h3>
+                        <div class="game-management-buttons">
+                            <button id="save-game-btn" class="management-btn">Save Game</button>
+                            <button id="show-history-btn" class="management-btn">Show History</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conversation History Modal -->
+        <div id="history-modal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Conversation History</h2>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div id="history-content" class="history-content"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Load Game Modal -->
+        <div id="load-modal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Load Game</h2>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <form id="load-game-form">
+                        <div class="form-group">
+                            <label for="load-session-id">Session ID:</label>
+                            <input type="text" id="load-session-id" name="load-session-id" required>
+                        </div>
+                        <button type="submit" class="load-btn">Load Game</button>
+                    </form>
                 </div>
             </div>
         </div>

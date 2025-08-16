@@ -1,0 +1,51 @@
+{
+  "session_id": "f64159a6-60ce-466a-8140-98fcf942d04a",
+  "player_character": {
+    "id": "char_5638",
+    "name": "WebTest",
+    "race": "Human",
+    "character_class": "Fighter",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 12,
+    "dexterity": 14,
+    "vitality": 13,
+    "intelligence": 15,
+    "spirit": 17,
+    "hit_points": 10,
+    "max_hit_points": 12,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 17,
+    "attack_bonus": 4,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Sword": 2,
+      "Armor": 2,
+      "Dodge": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "A Human Fighter who has chosen the path of adventure for reasons known only to them.",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "The Ashen Wastes",
+    "world_description": "A desolate expanse of black sand and jagged obsidian shards, where the remnants of an ancient volcanic catastrophe have left the land scarred and lifeless. Twisted spires of volcanic glass pierce the sky, and the air shimmers with unnatural heat.",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T05:19:27.561034",
+  "last_updated": "2025-08-15T05:19:27.561037"
+}

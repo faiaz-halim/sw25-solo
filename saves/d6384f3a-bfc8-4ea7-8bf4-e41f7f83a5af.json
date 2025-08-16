@@ -1,0 +1,51 @@
+{
+  "session_id": "d6384f3a-bfc8-4ea7-8bf4-e41f7f83a5af",
+  "player_character": {
+    "id": "char_5233",
+    "name": "HerpADerp",
+    "race": "Elf",
+    "character_class": "Priest",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 14,
+    "dexterity": 8,
+    "vitality": 13,
+    "intelligence": 15,
+    "spirit": 13,
+    "hit_points": 10,
+    "max_hit_points": 12,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 14,
+    "attack_bonus": 4,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Healing": 2,
+      "Charm": 2,
+      "Knowledge": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "In the shadow-dappled village of Sylwen Hollow, nestled at the edge of the Elvenwood\u2019s ancient forest, a child elf named Thalorien was born under the light of the twin moons\u2014a rare celestial omen that the village seers interpreted as a sign of destiny. His family were humble weavers, crafting ceremonial robes for the druidic circles that maintained the sacred groves, but Thalorien\u2019s restless curiosity often led him beyond the loom-lined streets. While gathering moss-dyed threads one dusk, he stumbled upon a buried relic: a shattered obsidian tablet etched with runes of the Old Flame, a forgotten deity whose name had been erased from elven histories. When he brought it to the village elder, her panic was palpable. By dawn, the groves began to wither, and Thalorien was branded a harbinger of misfortune. Exiled with only his questions and a moth-eaten tome his mother slipped him at the border, he vowed to uncover the truth behind the artifact\u2019s curse, even if it meant leaving the forests of his ancestors for the wider, perilous world.\n\nThalorien\u2019s exile led him to the Sanctuary of Whispering Leaves, a temple where elven priests served the god of knowledge, Aelthara, preserving half-lost truths in song and scroll. The high priestess, Lirael Moonscribe, took pity on the boy, recognizing his raw talent for unraveling magical sigils. Under her tutelage, he learned to channel divine power through his voice, weaving hymns that could mend wounds or quell restless spirits. Yet his obsession with forbidden lore clashed with the temple\u2019s cautious traditions. During a pilgrimage to the Ashen Tombs, Thalorien discovered a cryptic reference to the Codex of Thorns, a text rumored to hold the secrets of the Old Flame\u2019s fall\u2014and the key to reversing the corruption spreading from the tablet. When he stole fragments of the temple\u2019s archives to pursue its trail, Lirael banished him, warning that his hunger for knowledge would doom more than himself.\n\nNow marked as both priest and heretic, Thalorien wanders the human kingdoms, his silver ears twitching at rumors of ancient vaults and derelict temples. He is gaunt, with ink-stained fingers and a habit of murmuring incantations under his breath, even mid-conversation, a quirk of his mind perpetually cross-referencing the world\u2019s mysteries. His moonstone pendant, a token from his mother, glows faintly when near relics of the Old Flame, though he hides its flickering light beneath his patched robes. Fortune, he claims, funds his quest to piece together the Codex, but his true aim is redemption: he believes the Old Flame\u2019s corruption is tied to a greater threat that will consume the Elvenwood unless he acts. Thalorien\u2019s path is littered with uneasy alliances\u2014he once traded secrets with the swindler Kael of Redshore to gain entry to a drowned library, only to later learn Kael sold the contents to a necromancer.\n\nIn his heart, Thalorien wrestles with contradictions: the humility of his upbringing versus the pride of a scholar who deciphers what wiser priests fear, the serenity of Aelthara\u2019s hymns against the fevered whispers of the Codex fragments. His voice, melodious and sharp, can charm a crowd or command a demon\u2014but often falters when he must admit his own doubts. The hooks in his past tighten around him: Lirael\u2019s spies track his progress, the Old Flame\u2019s cultists seek to claim his findings, and the corrupted groves of Sylwen Hollow continue to spread, their skeletal trees reaching toward the human cities. Thalorien tells himself he seeks adventure, but every step away from the Elvenwood is a step toward answers he fears to find.",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "**Mizuhana Vale**",
+    "world_description": "Nestled between the mist-cloaked peaks of the Tatenokabe Mountains and the jewel-toned Shimmering Mire, Mizuhana Vale is a land of serene beauty and quiet unease. Lush rice terraces cascade down verdant hills, their paddies reflecting the sky like liquid mirrors, while ancient cypress forests whisper with the secrets of forgotten spirits. The Vale\u2019s rivers, shimmering with a faint cerulean glow, are said to be blessed by the Water Lily Kami, though rumors persist that the corruption of the mire taints their source. Villages here follow a centuries-old rhythm of life, governed by seasonal festivals and the watchful eyes of shrine maidens who maintain fragile harmony between the mortal realm and the yokai that lurk beyond the torii gates. Yet the peace is fraying: travelers speak of ghost-eyed samurai wandering the forests, and the once-reliable harvests have begun to fail as eerie \"moonfire\" blooms in the night. The Vale\u2019s heart is its **Mirrorwood Forest**, a grove of argent-barked trees whose leaves reflect memories of those who pass beneath them. Local lore warns that prolonged exposure to these visions can unravel the mind. To the south, the **Suiden Falls** thunder into a sacred pool where pilgrims seek visions of their ancestors, but lately, the waters have grown stagnant and thick, oozing a sickly iridescence. Meanwhile, the **Shimmering Mire**, a sprawling bog choked with bioluminescent moss and half-hidden ruins, is the Vale\u2019s greatest enigma. It is cursed\u2014a place where the boundary between the living and the dead grows thin, and the air hums with the chants of drowned monks.",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T04:13:16.198045",
+  "last_updated": "2025-08-15T04:13:16.198049"
+}

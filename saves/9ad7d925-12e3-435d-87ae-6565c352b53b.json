@@ -1,0 +1,51 @@
+{
+  "session_id": "9ad7d925-12e3-435d-87ae-6565c352b53b",
+  "player_character": {
+    "id": "char_7859",
+    "name": "TestCharacter",
+    "race": "Dwarf",
+    "character_class": "Priest",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 10,
+    "dexterity": 8,
+    "vitality": 13,
+    "intelligence": 7,
+    "spirit": 13,
+    "hit_points": 10,
+    "max_hit_points": 12,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 14,
+    "attack_bonus": 3,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Healing": 2,
+      "Charm": 2,
+      "Knowledge": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "Thrain Stoneheart was born beneath the slate peaks of the Karak Dran Mountains, where the dwarven hold of Dranhalgrin carved its halls from the living rock. The son of a revered priest of Moradin, the dwarven god of creation and stone, Thrain\u2019s early life was steeped in ritual and the unyielding traditions of his kin. He was destined to become a spiritual guide, his voice echoing in the grand temple caverns, until the Ashen Rot came. It began when miners unearthed a sealed chamber deep within the Eldrath Vein\u2014a forgotten tomb containing a blackened, rune-etched relic known as the Ember of Ur. Within weeks, the Rot consumed his family, his neighbors, and the very soul of Dranhalgrin. The hold\u2019s elders, fearing the wrath of the gods, ordered the Ember destroyed, but Thrain\u2019s father, in a desperate bid to save his people, touched it. The artifact seared his body and mind, leaving him a gibbering husk. Thrain, then a young acolyte, watched the fire of his father\u2019s faith snuffed out in madness, and the Ember vanished, stolen by a shadowy cabal that called themselves the \u201cKeepers of the Veil.\u201d The church buried the truth, blaming the tragedy on \u201cdivine tests,\u201d but Thrain knew better. The disease, the suffering, the lies\u2014all were the fruit of forbidden knowledge unearthed.\n\nNow, decades later, Thrain wanders the surface world, a priest without a temple, clutching the cracked, ashen fragments of his father\u2019s holy symbol. He seeks both the Ember and the Keepers, convinced they hold secrets that could prevent another Rot\u2014or undo its damage if the artifact\u2019s power is wielded correctly. His quest is funded by the coin of adventuring, a life that grates against his dwarven love of stability but fuels his obsession. Thrain is a paradox: gruff and wary of strangers, yet quick to defend the vulnerable, his voice often betraying a dry, black humor honed in the face of grief. He mutters prayers to Moradin through clenched teeth before entering ruins, half-expecting the gods to smite him for his heresies, and taps his mace rhythmically on stone when anxious\u2014a habit from days spent in the Eldrath Vein\u2019s darkness. Though exiled from his hold for \u201cdefaming the ancestors,\u201d he secretly hopes to redeem his father\u2019s name by proving that the Rot was not divine punishment, but a warning ignored.\n\nThrain\u2019s path crosses with parties willing to pay a priest\u2019s tithe for blessings, but he lingers longest in forgotten places: elven catacombs, human necropolises, even the cursed depths of Karak Ungor, where the Ember\u2019s accomplices might yet hide. He carries a map inked on lambskin, frayed at the edges, marked with symbols of extinct dwarven outposts and rumors of Ur\u2019s cultists. In the city of Grimsword, a scholar named Elira Voss claims knowledge of the Keepers, but demands a favor\u2014a dangerous expedition into a buried fortress. Meanwhile, Inquisitor Malken of the Holy Light Church shadows Thrain, suspecting the Ember\u2019s power is tied to demonic forces. Thrain\u2019s motivations are a tangled knot of guilt, curiosity, and a flicker of hope: if he can master the secrets he once condemned, he might not only stop the Keepers but silence the whispers that the Ember\u2019s corruption lingers still in his blood.\n\nYet Thrain\u2019s journey hides a deeper fear. The Rot\u2019s survivors, scattered and disfigured, speak of dreams\u2014visions of a \u201cFlame Below\u201d that stirs. He suspects the Ember was not a relic, but a seal, and his pursuit may awaken something far older than Ur\u2019s heresy. Fortune and adventure are merely the price of his true pilgrimage, a pilgrimage that could shatter his soul or rewrite the fate of the world. His hammer, worn from both consecration and battle, bears an inscription in Khazid\u2019\u00e2r: *\u201cFor those the gods abandoned.\u201d* Those who travel with him often find his sarcasm grating, his obsession unsettling, but his resolve unshakable. Should the Flame Below rise, they will either curse his name\u2014or thank the gods he never stopped digging.",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "**Kurogane Vale**",
+    "world_description": "The vale\u2019s atmosphere is thick with a sense of encroaching dread. Travelers speak of a \"shadow harvest\" where crops rot overnight, and the shrine maidens of Izanami\u2019s Torch Pagoda report dreams of a drowned temple rising from the river\u2019s depths. Samurai patrols grow thinner as bandits in Oni Pass ambush shipments, while the mystic guild *Karasu-Tengu* claims the chaos is a reckoning for the clan\u2019s hubris in exploiting sacred land. It is a land on the brink of turmoil, aching for heroes\u2014or fools\u2014to unravel its mysteries.",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T04:23:55.465051",
+  "last_updated": "2025-08-15T04:23:55.465055"
+}

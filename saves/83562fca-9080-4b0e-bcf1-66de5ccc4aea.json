@@ -1,0 +1,51 @@
+{
+  "session_id": "83562fca-9080-4b0e-bcf1-66de5ccc4aea",
+  "player_character": {
+    "id": "char_1959",
+    "name": "TestCharacter",
+    "race": "Dwarf",
+    "character_class": "Priest",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 10,
+    "dexterity": 7,
+    "vitality": 11,
+    "intelligence": 13,
+    "spirit": 14,
+    "hit_points": 10,
+    "max_hit_points": 11,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 13,
+    "attack_bonus": 3,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Healing": 2,
+      "Charm": 2,
+      "Knowledge": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "Thrain Ironvein was born in the deep-hewn halls of Dunthar\u2019s Deep, a stronghold nestled within the Ironhold Mountains where the dwarven clans vied for dominance through trade, craft, and ancient rites. As a member of the Stonefire Clan, known for its mastery of metallurgy and its shadowy dealings in the black market, Thrain was expected to inherit the family\u2019s forge and uphold their reputation. However, from a young age, he was drawn not to the clang of hammers but to the whispered negotiations in the backrooms of the city\u2019s underbelly. His mother, a devout priestess of Moradin, often scolded him for prowling the halls of the Temple of the Forge, where he would eavesdrop on sermons and memorize the sacred texts, only to later use that knowledge to manipulate the gullible and exploit the temple\u2019s resources. By his early twenties, Thrain had become a skilled thief, smuggling rare gemstones and sacred relics from the temple\u2019s vaults to fund his family\u2019s illicit ventures, all while maintaining the facade of piety. His dual role as a priest and a criminal earned him both reverence and suspicion, but it was his knack for deception\u2014learning to read the flicker of a candle\u2019s flame to spot hidden traps or using his knowledge of sacred geometry to bypass wards\u2014that secured his place in the Iron Guild, a clandestine network of dwarven traders and cutthroats. Yet, when a failed heist left a temple acolyte dead and the guild\u2019s leadership desperate to shift blame, Thrain was cast out, his name stricken from the clan records and his divine blessings revoked.\n\nExiled and stripped of his titles, Thrain wandered the surface world, his once-pristine robes now tattered and his faith fractured. He found work as a mercenary priest, offering blessings to mercenaries and bandits in exchange for coin, but his heart remained tethered to the hunger for power that had first driven him to crime. In the lawless city of Ironspire, he encountered a mercenary captain named Varyn Karg, who recognized Thrain\u2019s potential and recruited him into a band of adventurers seeking to plunder the ruins of the Sunspire Monastery, a once-revered site now overrun by cultists. Thrain\u2019s dual expertise in divine magic and subterfuge made him invaluable, but his true goal was to uncover the monastery\u2019s lost archives, rumored to hold secrets of the First Forge\u2014a mythical repository of Moradin\u2019s forgotten artifices. His motivations, however, were not purely altruistic; he sought the artifacts to restore his clan\u2019s honor, if not his own, and to secure a position of influence that would outshine the guildmasters who had betrayed him. Yet, beneath his calculating exterior, Thrain harbored a deep resentment toward the rigid hierarchies of dwarven society, which had cast him aside for his sins, and a quiet yearning to prove that even a sinner could wield divine power.\n\nNow, with a reputation as both a charlatan and a cunning survivor, Thrain travels under the alias \"The Hollow Flame,\" a name derived from the sigil of his exiled clan\u2014a symbol of a forge with a cracked core. He carries a rusted holy symbol of Moradin, its edges dulled by years of secret use in illicit rituals, and a collection of stolen relics that he keeps locked in a false-bottomed satchel. His personality is a blend of swaggering charm and icy pragmatism; he\u2019ll recite scripture with a grin while pocketing a noble\u2019s purse, and he views faith as a tool as much as a calling. Yet, he\u2019s not without contradictions\u2014he once spared a rival\u2019s life after recognizing a shared scar from a clan feud, and he secretly collects trinkets from the surface world, fascinated by their \"shiny nonsense.\" Thrain\u2019s path is fraught with peril, as the Iron Guild seeks to silence him and the Temple of the Forge hunts him for heresy, but he remains undeterred. His journey may lead him to reclaim his clan\u2019s legacy, or to uncover a truth that could shatter the foundations of dwarven faith itself. Along the way, he might cross paths with the descendants of those he wronged, or stumble upon a cult that worships the very relics he stole, setting the stage for a reckoning that could either redeem him or plunge him deeper into darkness.",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "Kurogami Highlands",
+    "world_description": "",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T04:29:20.237692",
+  "last_updated": "2025-08-15T04:29:20.237696"
+}

@@ -45,7 +45,7 @@ class AIGameMaster:
             response = self.client.call_llm(
                 prompt=user_prompt,
                 system_prompt=system_prompt,
-                max_tokens=1500,
+                model="meta-llama/llama-3.3-70b-instruct:free",
                 temperature=0.8
             )
 
@@ -172,7 +172,7 @@ class AIGameMaster:
             response = self.client.call_llm(
                 prompt=user_prompt,
                 system_prompt=system_prompt,
-                max_tokens=800,
+                model="meta-llama/llama-3.3-70b-instruct:free",
                 temperature=0.7
             )
 
@@ -186,7 +186,7 @@ class AIGameMaster:
             response = self.client.call_llm(
                 prompt=user_prompt,
                 system_prompt=system_prompt,
-                max_tokens=600,
+                model="meta-llama/llama-3.3-70b-instruct:free",
                 temperature=0.6
             )
 
@@ -258,7 +258,7 @@ class AIGameMaster:
                 response = self.client.call_llm(
                     prompt=user_prompt,
                     system_prompt=system_prompt,
-                    max_tokens=600,
+                    model="meta-llama/llama-3.3-70b-instruct:free",
                     temperature=0.7
                 )
 
@@ -303,7 +303,7 @@ class AIGameMaster:
             response = self.client.call_llm(
                 prompt=user_prompt,
                 system_prompt=system_prompt,
-                max_tokens=600,
+                model="meta-llama/llama-3.3-70b-instruct:free",
                 temperature=0.7
             )
 
@@ -409,7 +409,7 @@ class AIGameMaster:
             response = self.client.call_llm(
                 prompt=user_prompt,
                 system_prompt=system_prompt,
-                max_tokens=800,
+                model="meta-llama/llama-3.3-70b-instruct:free",
                 temperature=0.7
             )
 

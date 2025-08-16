@@ -1,0 +1,48 @@
+{
+  "session_id": "12cd4359-460f-41ab-a318-cb762884a9d7",
+  "player_character": {
+    "id": "char_5456",
+    "name": "Thorburn",
+    "race": "Dwarf",
+    "character_class": "Druid",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 13,
+    "dexterity": 14,
+    "vitality": 13,
+    "intelligence": 14,
+    "spirit": 9,
+    "hit_points": 10,
+    "max_hit_points": 12,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 17,
+    "attack_bonus": 4,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "Thorgrim Stonebark was born deep beneath the Ironpeak Mountains in the ancient dwarven hold of Khaz Dum Kar, where his clan had carved their lives from stone and metal for countless generations. However, unlike his kin who found contentment in the eternal halls, young Thorgrim felt an inexplicable pull toward the surface world. While other dwarves studied the secrets of forge and stone, he spent hours in the hold's small garden, nurturing the few hardy plants that could survive underground. His fascination with growing things only deepened when the hold's underground springs began to run dry, and he successfully cultivated moss and fungi that helped sustain his people through the crisis. This unusual interest led the clan elders to suggest he seek out the Druidic Circles that were said to exist in the surface world, hoping he might learn techniques to help their hold thrive. With his father's ancient warhammer strapped to his back and his mother's blessing, Thorgrim left the only home he'd ever known at the age of thirty-seven.\n\nFor the past fifteen years, Thorgrim has wandered across the breadth of the Sword World, from the Whispering Woods of Laurelind to the Thornwood Marshes near Berserkergang. He has studied under various druidic traditions, learning the ways of different climates and cultures. In the tropical jungles of Zarak, he spent three years with the Emerald Circle, mastering the art of cultivating exotic plants and communicating with jungle creatures. Among the nomadic tribes of the Western Steppes, he learned to read the signs of weather and migration, while in the port city of Kordavia, he discovered how to grow food in the most unlikely places - even on rooftops and in barrel gardens. His dwarven heritage made him an unusual student among the druids, but his practical approach and deep respect for nature's cycles earned him respect. Despite his wanderings, Thorgrim has never been able to shake his dwarven love of craftsmanship, often creating intricate wooden carvings and stone gardens wherever he stays, much to the delight of local communities.\n\nNow, at fifty-two, Thorgrim finds himself in a difficult position that drives him ever onward. Word has reached him through dwarf traders that his beloved hold of Khaz Dum Kar faces a terrible blight - a mysterious sickness is spreading through their underground farms and gardens, threatening the very survival of his clan. The healers and gardeners of the hold have sent desperate messages seeking help, but Thorgrim knows that solving such a problem will require rare components, ancient texts, and perhaps even consultation with the most powerful druids of the land. His years of wandering have left him with little coin, and the remedies he seeks will not come cheap. Beyond the immediate need to save his people, Thorgrim has developed a deep wanderlust that makes settling in one place feel like a cage, and he finds that his unique perspective as both dwarf and druid gives him insights that others lack.\n\nThorgrim's personality reflects this dual nature - he speaks with the gruff directness typical of his race, but his eyes hold the calm wisdom of one who has watched seasons change for decades. He has an odd habit of collecting soil samples from every place he visits, storing them in small carved pouches, claiming that \"every handful of earth tells a story.\" His dwarven stubbornness manifests in his refusal to give up on any plant he's determined to save, often spending days coaxing life back into seemingly dead specimens. He's developed a reputation as a miracle worker among rural communities, but his services always come with a price - not just in coin, but in stories, songs, or small favors that might prove useful someday. Thorgrim carries with him a worn leather journal filled with his observations, and he has an uncanny ability to remember every person he's met, every problem he's solved, and every debt owed - making him both a valuable ally and a potentially dangerous enemy for those who would cross him.",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "The Silent Marshlands of Kagebumi",
+    "world_description": "For generations, the marshlands have been home to diverse communities who have learned to live in harmony with the strange energies that permeate the land. Fisherfolk cast their nets in waters that yield both abundant catches and mysterious artifacts from ages past. Monks maintain secluded temples on artificial islands, studying the region's unique spiritual phenomena. However, in recent months, the delicate balance has begun to shift. Travelers speak of shadows that move independently of their owners, of whispers that carry prophecies in forgotten tongues, and of lights that dance beneath the water's surface in patterns that suggest intelligence rather than natural occurrence.",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T23:09:13.124001",
+  "last_updated": "2025-08-15T23:10:49.039332"
+}

@@ -1,3 +1,4 @@
+
 from .system_prompts import CHARACTER_GENERATION_SYSTEM_PROMPT
 from ...core.models.attributes import Race, Class
 
@@ -33,7 +34,8 @@ Create a compelling 3-4 paragraph origin story that:
 Make the backstory feel natural and provide clear motivations for the character's current situation.
 Focus on the Sword World 2.5 setting and cultural elements.
 
-Format your response as a coherent narrative without section headers."""
+Format your response as a coherent narrative without section headers.
+DO NOT truncate the story - provide the complete 3-4 paragraph backstory."""
 
     return system_prompt, user_prompt
 

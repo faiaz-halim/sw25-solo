@@ -27,14 +27,14 @@ Player Character: {game_state.get('player_character', {}).get('name', 'Unknown')
 Party Members: {', '.join([member.get('name', 'Unknown') for member in game_state.get('party_members', [])])}
 Active Quests: {len(game_state.get('active_quests', []))}
 
-Respond to the player's action with:
-1. An immediate narrative description of what happens
-2. The consequences or results of their action
-3. New options or choices that arise from the outcome
-4. Any skill checks, combat, or special events that occur
+Respond to the player's action with ONLY the following content in this exact order:
+1. A narrative description of what happens (do not include section headers like "Narrative Description")
+2. The consequences or results of their action (do not include section headers like "Consequences")
+3. New options or choices that arise from the outcome (list 2-3 clear options)
 
 Be descriptive but concise. Focus on the Sword World 2.5 setting and maintain the adventure atmosphere.
-If the action requires a skill check or combat, describe the situation clearly but don't resolve the mechanical outcomes."""
+DO NOT include any section headers, markdown formatting, or meta-text in your response.
+Provide only the content that should be shown directly to the player."""
 
     return system_prompt, user_prompt
 

@@ -1,0 +1,51 @@
+{
+  "session_id": "73152b45-02a7-4b7d-b376-e1741097b917",
+  "player_character": {
+    "id": "char_1549",
+    "name": "TestCharacter",
+    "race": "Dwarf",
+    "character_class": "Priest",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 11,
+    "dexterity": 13,
+    "vitality": 19,
+    "intelligence": 13,
+    "spirit": 16,
+    "hit_points": 10,
+    "max_hit_points": 14,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 16,
+    "attack_bonus": 3,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Healing": 2,
+      "Charm": 2,
+      "Knowledge": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "In the shadowed valleys of the Ironspine Mountains, where the scent of smoldering forges mingled with the earthy tang of stone, Brokkar Torinsson was born to a family of miners in the modest clanhold of Hearthspire. His parents, Torin and Mira, labored in the obsidian quarries under the watchful eye of Clan Stonehelm, their days measured by the rhythmic clink of pickaxes and the distant echoes of ancient ballads sung in the halls. Brokkar\u2019s childhood was one of calloused hands and whispered prayers to Moradin, the dwarven god of creation, whose teachings of perseverance and craftsmanship were etched into every stone wall of their home. Yet humility and hard work could not shield them from the betrayal that came when Brokkar was barely old enough to wield a mace. During the Festival of Emberkindling, a rival clan\u2014the Blacktarns, long envious of Hearthspire\u2019s rich veins of starsteel\u2014ambushed the hold under cover of revelry. Torin and Mira were slain defending the temple vaults, where Brokkar,",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "**Kageyama Province (Shadow Mountain Region)**",
+    "world_description": "Nestled between the jagged peaks of the Oni-no-T\u014dge Mountains and the mist-shrouded forests of western Alframe, Kageyama Province is a land of crumbling feudal traditions and encroaching supernatural dread. Once a prosperous territory ruled by the Kurogane clan, its samurai lords now struggle to maintain order as strange omens plague the land: rivers running black at dusk, cherry blossoms wilting into ash, and whispers in the wind that sound eerily like the voices of the dead. The province\u2019s heart is the Tone River, a once-sacred waterway believed to be blessed by the dragon deity Ry\u016bjin. Now, its currents drip with a viscous, otherworldly slime that sickens livestock and mutates fish into grotesque horrors. Nomadic y\u014dkai (spirits) stalk the villages, while ancient ruins hidden in the mountains rumble with dormant power. The locals speak of the \"Yami no Ky\u014dfu\" (Shadow Horror), a nameless evil they believe their ancestors sealed away long ago. Kageyama\u2019s aesthetic blends weathered wooden shrines with moss-eaten stone fortresses. Samurai patrol cobbled streets in lacquered armor, while traveling ascetics chant sutras to ward off spirits at crossroads. The air smells of incense, river silt, and the faint metallic tang of the corruption spreading through the land. Travelers should beware the *Dark Hollow*, a bamboo thicket where the stalks grow twisted and hum with malevolent energy\u2014a place where the veil between the material world and the spirit realm is perilously thin.",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T03:41:22.813763",
+  "last_updated": "2025-08-15T03:41:22.813769"
+}

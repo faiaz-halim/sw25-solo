@@ -1,0 +1,51 @@
+{
+  "session_id": "356311d0-5948-4bc0-9f33-770158d1027e",
+  "player_character": {
+    "id": "char_2786",
+    "name": "TestPlayer",
+    "race": "Human",
+    "character_class": "Fighter",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 15,
+    "dexterity": 12,
+    "vitality": 9,
+    "intelligence": 10,
+    "spirit": 17,
+    "hit_points": 10,
+    "max_hit_points": 11,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 16,
+    "attack_bonus": 5,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Sword": 2,
+      "Armor": 2,
+      "Dodge": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "Kaelen Thorne was born in the bustling port city of Varethis, where the clang of blacksmiths and the hum of merchants mingled with the melodies of street performers. As a child, he displayed an uncanny talent for sculpture, crafting intricate figurines from driftwood and bronze that seemed to capture the very essence of movement. His mother, a seamstress with a passion for storytelling, often whispered tales of the Crimson Moon Festival, a grand event where artisans and warriors alike competed to carve their legacies into the city\u2019s history. Kaelen\u2019s ambition was to become a master of both craft and combat, but his path took a darker turn when he joined the Guild of the Silver Quill, a clandestine group of performers who used their art to manipulate nobles and steal secrets. During the festival\u2019s final night, a botched performance\u2014meant to distract a rival lord\u2014led to a chain reaction of fire and chaos that consumed the Grand Amphitheater, killing dozens. Though Kaelen\u2019s role was indirect, he bore the guilt of his companions\u2019 recklessness, and when the guild dissolved in the aftermath, he fled Varethis, leaving behind his tools and a shattered reputation. Now, as a Fighter, he carries a battered lute slung across his back, its strings replaced with braided steel, and a sketchbook filled with battle strategies drawn in the same fluid lines he once used to etch portraits. His hands, once calloused from chiseling marble, are now hardened by the grip of a sword, yet he still speaks of \"the rhythm of a strike\" as if it were a sonnet.\n\nKaelen\u2019s quest for redemption is intertwined with his hunger for fortune, for he believes that only by proving his worth in the arena of war can he rewrite the story of his past. He joined the mercenary company of the Iron Veil, a band of wanderers who patrol the fractured borders of the Eastern Reach, hoping to trade his skills for coin and a chance to rebuild his name. Yet his true aim is more personal: to locate the lost \"Songblade of Lysara,\" a legendary weapon said to have been crafted by a minstrel-warrior who once saved Varethis from invasion. Rumors suggest it lies in the ruins of the Obsidian Spire, a crumbling tower where the guild\u2019s secrets are buried. Kaelen\u2019s charisma and flair for the dramatic make him a natural leader in the camp, though his tendency to recite poetry before combat or sketch battle scenes in the dirt often draws laughter from his peers. He\u2019s haunted by the memory of the festival\u2019s flames, which he claims still flicker in his dreams, and his resolve to atone is matched only by his fear of failing again.\n\nThe scars on his arms tell stories of both art and violence\u2014some from chisels, others from blades\u2014and he often mutters about \"the cost of beauty\" when asked about his past. His connection to Varethis remains tenuous; he once had a mentor, Master Elira, a blind composer who taught him that music could heal as well as harm, but she vanished after the festival, leaving behind a single, unfinished symphony. Kaelen\u2019s journey has brought him to the edge of the Whispering Wastes, where the Iron Veil seeks to unearth a cache of ancient war-machines, but he suspects the guild\u2019s remnants might still be at work, manipulating events from the shadows. His dual nature\u2014artist and warrior\u2014makes him a figure of intrigue, and his presence in the campaign could draw the attention of former guild members, Varethis\u2019 ruling council, or even the spectral echoes of the Crimson Moon Festival, which some claim still haunt the city\u2019s streets. Whether he\u2019s seeking treasure, absolution, or a way to silence the ghosts of his past, Kaelen\u2019s story is one of transformation, and his next adventure may hinge on whether he can reconcile the two halves of his soul.",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "",
+    "world_description": "",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T04:53:43.745457",
+  "last_updated": "2025-08-15T04:53:43.745462"
+}

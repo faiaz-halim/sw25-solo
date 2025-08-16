@@ -1,0 +1,51 @@
+{
+  "session_id": "f2d20f18-59e2-40e6-8c38-5fe279071660",
+  "player_character": {
+    "id": "char_3283",
+    "name": "HerpADerp",
+    "race": "Gnome",
+    "character_class": "Wizard",
+    "level": 1,
+    "experience_points": 0,
+    "strength": 13,
+    "dexterity": 8,
+    "vitality": 11,
+    "intelligence": 16,
+    "spirit": 18,
+    "hit_points": 10,
+    "max_hit_points": 11,
+    "magic_points": 0,
+    "max_magic_points": 0,
+    "defense": 14,
+    "attack_bonus": 4,
+    "skills": {
+      "Perception": 1,
+      "Survival": 1,
+      "Bargain": 1,
+      "Magic": 3,
+      "Knowledge": 2,
+      "Language": 1
+    },
+    "spells": [],
+    "inventory": [],
+    "equipped_weapon": null,
+    "equipped_armor": null,
+    "equipped_accessories": [],
+    "backstory": "Thistlewick Mucklepocket was born in the subterranean city of Gnomeregan, where the flickering glow of arcane lanterns and the hum of clockwork contraptions defined the rhythm of life. From a young age, the gnomish child exhibited an insatiable curiosity for both mechanical ingenuity and the whispered secrets of ancient magic, a duality that set him apart from his peers. His father, a master artificer, and his mother, a mage of the Gnomeregan Arcane Conclave, nurtured his talents, but their home was shattered when the Dark Iron Dwarves launched a brutal siege in the Year of the Shattered Anvil. Thistlewick\u2019s brother, a decorated soldier in the Gnomeregan Guard, fell defending the city\u2019s northern tunnels, his body never recovered from the chaos. The attack left Thistlewick orphaned and the Gnomeregan\u2019s once-thriving halls reduced to smoldering ruins, forcing him to flee with a handful of survivors to the surface. Though the Alliance granted them refuge in Ironforge, the gnomes\u2019 ingenuity and resilience were tested as they rebuilt, and Thistlewick channeled his grief into rigorous training, enlisting in the Stormwind Army\u2019s arcane division to master the combat magic that had failed to save his family. His time in the military honed his tactical mind and instilled a deep distrust of the Dark Irons, who had once been allies of the Alliance but now lurked in the shadows of the Eastern Kingdoms, their motives as murky as the molten rivers of their homeland.\n\nThistlewick\u2019s personality is a mosaic of pragmatism and whimsy, shaped by his dual heritage. He carries a pocket watch enchanted to track spell cooldowns, a relic from his brother\u2019s gear, and often mutters equations under his breath during battle, a habit from his days as a siege engineer. Though his military service taught him discipline, he retains a mischievous streak, delighting in pranking fellow soldiers with harmless illusions or tiny mechanical traps. His motivation for adventure is twofold: to dismantle the Dark Irons\u2019 growing influence and to uncover the truth behind the siege, which the Alliance has long downplayed. He believes the attack was no mere act of aggression but a calculated move by a shadowy faction within Ironforge, a theory that could cost him his reputation if exposed. This obsession drives him to seek rare tomes and artifacts, particularly those linked to the lost Gnomeregan archives, which are rumored to lie in the ruins of the Undermine. His sharp wit and tendency to speak in riddles about \u201cthe cost of progress\u201d make him an enigmatic figure, though his loyalty to those who earn his trust is unshakable.\n\nThe scars of his past are both physical and psychological; a burn on his left hand\u2014a remnant of a failed defensive spell during the siege\u2014serves as a constant reminder of his inadequacy, while his obsession with precision manifests in meticulous spellcasting rituals. Thistlewick\u2019s journey has already drawn the attention of the Ironforge Magistrate\u2019s Office, who view his inquiries as heretical, and the Dark Irons, who suspect him of being a spy. His current quest for fortune is not mere greed but a necessity: he seeks the funds to hire a team of engineers and mages to infiltrate the Undermine and recover his brother\u2019s journal, which he believes holds clues to the conspiracy. Along the way, he might cross paths with the remnants of the Gnomeregan Guard, now scattered across the world, or with surface-dwelling gnomes who resent the Alliance\u2019s treatment of their kind. His story is one of redemption and reckoning, a gnome who wields magic not just as a tool, but as a weapon to reclaim his people\u2019s legacy\u2014and maybe, just maybe, to finally avenge the brother he could not save.",
+    "alignment": "Neutral"
+  },
+  "party_members": [],
+  "active_quests": [],
+  "completed_quests": [],
+  "world_context": {
+    "current_location": "The Crimson Vale",
+    "world_description": "",
+    "time_of_day": "day",
+    "weather": "clear"
+  },
+  "inventory": [],
+  "combat_state": null,
+  "game_flags": {},
+  "created_at": "2025-08-15T05:33:55.759503",
+  "last_updated": "2025-08-15T05:35:49.934377"
+}

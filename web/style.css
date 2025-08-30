@@ -63,8 +63,8 @@ header h1 {
 .form-group {
     max-width: 400px;
     margin: 0 auto;
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
 }
 
 .form-group label {

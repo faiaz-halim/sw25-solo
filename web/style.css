@@ -289,40 +289,6 @@ header h1 {
     margin-bottom: 20px;
 }
 
-.options-section {
-    background: rgba(52, 152, 219, 0.1);
-    padding: 15px;
-    border-radius: 5px;
-    border-left: 3px solid #3498db;
-}
-
-.options-section h4 {
-    color: #3498db;
-    margin-bottom: 10px;
-}
-
-.options-section ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.options-section li {
-    padding: 8px 12px;
-    margin-bottom: 5px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.options-section li:hover {
-    background: rgba(52, 152, 219, 0.3);
-}
-
-.options-section li:last-child {
-    margin-bottom: 0;
-}
 
 /* Input Form */
 .input-form {
@@ -528,7 +494,7 @@ header h1 {
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .common-actions-panel h3 {
@@ -540,17 +506,17 @@ header h1 {
 
 .common-actions-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
 
 .common-action-btn {
-    padding: 10px;
+    padding: 12px;
     background: #3498db;
     color: white;
     border: none;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     cursor: pointer;
     transition: background 0.3s;

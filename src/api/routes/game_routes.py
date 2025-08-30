@@ -365,6 +365,29 @@ async def save_game_state(session_id: str, db: Session = Depends(get_db)):
         )
 
 
+@router.get("/sessions", response_model=list)
+async def list_game_sessions(db: Session = Depends(get_db)):
+    """
+    List all available game sessions.
+
+    Args:
+        db (Session): Database session
+
+    Returns:
+        list: List of game sessions with basic info
+    """
+    try:
+        from src.database.game_state_service import list_game_sessions as service_list_sessions
+        sessions = service_list_sessions(db)
+        return sessions
+    except Exception as e:
+        logger.error(f"Failed to list game sessions: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to list game sessions: {str(e)}"
+        )
+
+
 @router.post("/load", response_model=GameStateResponse)
 async def load_game_state(request: dict, db: Session = Depends(get_db)):
     """

@@ -89,6 +89,11 @@
 
                 <button type="submit" id="start-game-btn">Start Adventure</button>
             </form>
+
+            <div class="form-group" style="margin-top: 20px; text-align: center;">
+                <p>Or load an existing game:</p>
+                <button type="button" id="load-game-start-btn" class="save-load-btn">Load Game</button>
+            </div>
         </div>
 
         <!-- Game Screen -->
@@ -126,6 +131,12 @@
                         <div id="narrative-content" class="narrative-content"></div>
                     </div>
 
+                    <!-- Common Actions Panel -->
+                    <div id="common-actions-panel" class="panel common-actions-panel">
+                        <h3>Common Actions</h3>
+                        <div id="common-actions" class="common-actions-grid"></div>
+                    </div>
+
                     <!-- Player Input -->
                     <form id="input-form" class="input-form">
                         <input type="text" id="player-input" placeholder="What would you like to do?" required>
@@ -133,18 +144,12 @@
                     </form>
                 </div>
 
-                <!-- Right Sidebar - Background and Common Actions -->
+                <!-- Right Sidebar - Background -->
                 <div class="right-sidebar">
                     <!-- Character Background Panel -->
                     <div id="character-background-panel" class="panel character-background-panel">
                         <h3>Character Background</h3>
                         <div id="character-backstory" class="character-backstory"></div>
-                    </div>
-
-                    <!-- Common Actions Panel -->
-                    <div id="common-actions-panel" class="panel common-actions-panel">
-                        <h3>Common Actions</h3>
-                        <div id="common-actions" class="common-actions-grid"></div>
                     </div>
                 </div>
             </div>

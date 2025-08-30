@@ -162,38 +162,6 @@ class UIManager {
             this.narrativeContent.appendChild(narrativeElement);
         }
 
-        // Display new options
-        if (gameState.new_options && gameState.new_options.length > 0) {
-            const optionsElement = document.createElement('div');
-            optionsElement.className = 'options-section';
-            optionsElement.innerHTML = '<h4>What would you like to do?</h4>';
-
-            // Create a container for the dynamic action buttons
-            const actionsContainer = document.createElement('div');
-            actionsContainer.className = 'dynamic-actions-grid';
-            actionsContainer.style.display = 'grid';
-            actionsContainer.style.gridTemplateColumns = 'repeat(2, 1fr)';
-            actionsContainer.style.gap = '10px';
-            actionsContainer.style.marginTop = '10px';
-
-            gameState.new_options.forEach(option => {
-                const actionButton = document.createElement('button');
-                actionButton.textContent = option;
-                actionButton.className = 'dynamic-action-btn';
-
-                // Add click handler
-                actionButton.addEventListener('click', () => {
-                    if (window.gameApp) {
-                        window.gameApp.handleActionInputFromOption(option);
-                    }
-                });
-
-                actionsContainer.appendChild(actionButton);
-            });
-            optionsElement.appendChild(actionsContainer);
-
-            this.narrativeContent.appendChild(optionsElement);
-        }
 
         // Scroll to bottom
         this.narrativeContent.scrollTop = this.narrativeContent.scrollHeight;
@@ -493,6 +461,12 @@ class GameApp {
         if (loadGameForm) {
             loadGameForm.addEventListener('submit', (e) => this.handleLoadGame(e));
         }
+
+        // Load game button on start screen
+        const loadGameStartBtn = document.getElementById('load-game-start-btn');
+        if (loadGameStartBtn) {
+            loadGameStartBtn.addEventListener('click', () => this.handleShowLoadModal());
+        }
     }
 
     async handleNewGame(event) {
@@ -668,10 +642,101 @@ class GameApp {
         }
     }
 
-    handleShowLoadModal() {
-        const loadModal = document.getElementById('load-modal');
-        if (loadModal) {
-            loadModal.classList.remove('hidden');
+    async handleShowLoadModal() {
+        // Fetch list of available sessions
+        try {
+            const response = await fetch(`${this.apiService.baseUrl}/sessions`);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const sessions = await response.json();
+
+            // Update the load modal to show session list
+            const loadModal = document.getElementById('load-modal');
+            if (loadModal) {
+                const modalBody = loadModal.querySelector('.modal-body');
+                if (modalBody) {
+                    if (sessions && sessions.length > 0) {
+                        // Create session list
+                        let sessionListHtml = '<h3>Select a saved game:</h3><div class="session-list" style="max-height: 400px; overflow-y: auto;">';
+
+                        sessions.forEach(session => {
+                            const createdAt = new Date(session.created_at).toLocaleString();
+                            const lastUpdated = new Date(session.last_updated).toLocaleString();
+                            sessionListHtml += `
+                                <div class="session-item" style="padding: 15px; margin: 10px 0; background: #f8f9fa; border-radius: 5px; border: 1px solid #dee2e6; cursor: pointer;"
+                                     data-session-id="${session.session_id}">
+                                    <div style="font-weight: bold; color: #2c3e50;">${session.player_name}</div>
+                                    <div style="font-size: 14px; color: #6c757d;">${session.player_race} ${session.player_class}</div>
+                                    <div style="font-size: 12px; color: #95a5a6; margin-top: 5px;">Created: ${createdAt}</div>
+                                    <div style="font-size: 12px; color: #95a5a6;">Last Updated: ${lastUpdated}</div>
+                                </div>
+                            `;
+                        });
+
+                        sessionListHtml += '</div>';
+                        modalBody.innerHTML = sessionListHtml;
+
+                        // Add click handlers to session items
+                        document.querySelectorAll('.session-item').forEach(item => {
+                            item.addEventListener('click', (e) => {
+                                const sessionId = e.currentTarget.getAttribute('data-session-id');
+                                if (sessionId) {
+                                    this.handleLoadGameById(sessionId);
+                                }
+                            });
+                        });
+                    } else {
+                        modalBody.innerHTML = '<p>No saved games found.</p><p><button type="button" class="load-btn" id="back-to-load-form">Back to Session ID</button></p>';
+
+                        // Add back button handler
+                        document.getElementById('back-to-load-form').addEventListener('click', () => {
+                            modalBody.innerHTML = `
+                                <form id="load-game-form">
+                                    <div class="form-group">
+                                        <label for="load-session-id">Session ID:</label>
+                                        <input type="text" id="load-session-id" name="load-session-id" required>
+                                    </div>
+                                    <button type="submit" class="load-btn">Load Game</button>
+                                </form>
+                            `;
+
+                            // Re-add form submission handler
+                            const loadGameForm = document.getElementById('load-game-form');
+                            if (loadGameForm) {
+                                loadGameForm.addEventListener('submit', (e) => this.handleLoadGame(e));
+                            }
+                        });
+                    }
+                }
+                loadModal.classList.remove('hidden');
+            }
+        } catch (error) {
+            console.error('Failed to fetch sessions:', error);
+            // Fallback to original load modal with session ID input
+            const loadModal = document.getElementById('load-modal');
+            if (loadModal) {
+                const modalBody = loadModal.querySelector('.modal-body');
+                if (modalBody) {
+                    modalBody.innerHTML = `
+                        <form id="load-game-form">
+                            <div class="form-group">
+                                <label for="load-session-id">Session ID:</label>
+                                <input type="text" id="load-session-id" name="load-session-id" required>
+                            </div>
+                            <button type="submit" class="load-btn">Load Game</button>
+                        </form>
+                    `;
+
+                    // Re-add form submission handler
+                    const loadGameForm = document.getElementById('load-game-form');
+                    if (loadGameForm) {
+                        loadGameForm.addEventListener('submit', (e) => this.handleLoadGame(e));
+                    }
+                }
+                loadModal.classList.remove('hidden');
+            }
         }
     }
 
@@ -681,6 +746,54 @@ class GameApp {
         modals.forEach(modal => {
             modal.classList.add('hidden');
         });
+    }
+
+    async handleLoadGameById(sessionId) {
+        try {
+            // Show loading screen
+            this.uiManager.showScreen('loading-screen');
+
+            // Load game state
+            const response = await fetch(`${this.apiService.baseUrl}/load`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ session_id: sessionId })
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const result = await response.json();
+
+            this.sessionId = sessionId;
+            this.gameState = result;
+
+            // Update UI
+            this.uiManager.showSessionId(this.sessionId);
+            this.uiManager.updateCharacterSheet(this.gameState.player_character);
+            this.uiManager.updateCharacterBackground(this.gameState.player_character);
+            this.uiManager.updateParty(this.gameState.party_members);
+            this.uiManager.updateConversationHistory(this.gameState.conversation_history);
+            this.uiManager.clearNarrative();
+            this.uiManager.updateNarrative(this.gameState);
+
+            // Show game screen
+            this.uiManager.showScreen('game-screen');
+
+            // Initialize common actions
+            this.uiManager.updateCommonActions();
+
+            // Hide load modal
+            this.handleCloseModals();
+
+        } catch (error) {
+            console.error('Failed to load game:', error);
+            alert('Failed to load game. Please try again.');
+            this.uiManager.showScreen('new-game-screen');
+        }
     }
 
     async handleLoadGame(event) {
